@@ -1,0 +1,12 @@
+{
+  "name": "rush-verso",
+  "version": "1.0.0",
+  "description": "Interface Agente Rush com suporte a n8n e NotebookLM",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "AzmuthDev",
+  "license": "ISC"
+}
