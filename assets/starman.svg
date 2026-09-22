@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1744" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#d50000" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4569"/>
+      <stop offset="50%" stop-color="#d50000"/>
+      <stop offset="100%" stop-color="#8e0000"/>
+    </linearGradient>
+    <filter id="neonFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient background glow -->
+  <circle cx="250" cy="250" r="230" fill="url(#starGlow)"/>
+
+  <!-- Outer Ring of the Federation -->
+  <circle cx="250" cy="250" r="200" fill="none" stroke="#d50000" stroke-width="12" filter="url(#neonFilter)"/>
+  <circle cx="250" cy="250" r="208" fill="none" stroke="#ff1744" stroke-width="2" opacity="0.6"/>
+
+  <!-- The Red Star of the Solar Federation -->
+  <polygon points="
+    250,50 
+    294,185 
+    440,185 
+    322,270 
+    367,405 
+    250,320 
+    133,405 
+    178,270 
+    60,185 
+    206,185" 
+    fill="url(#redGrad)" 
+    stroke="#ff616f" 
+    stroke-width="4"
+    stroke-linejoin="round"
+    filter="url(#neonFilter)"/>
+
+  <!-- Inner star accent line -->
+  <polygon points="
+    250,90 
+    284,195 
+    395,195 
+    305,260 
+    340,365 
+    250,300 
+    160,365 
+    195,260 
+    105,195 
+    216,195" 
+    fill="none" 
+    stroke="#ffa4a2" 
+    stroke-width="1.5" 
+    opacity="0.4"/>
+
+  <!-- The Starman Silhouette (Iconic pose: back turned, arm raised defying the Syrinx priests) -->
+  <g id="starman-figure" fill="#ffffff" filter="drop-shadow(0 0 8px rgba(255,255,255,0.85))">
+    <ellipse cx="252" cy="210" rx="14" ry="16"/>
+    <path d="M242,205 Q248,196 260,198 Q268,202 268,212 Q265,225 258,228 Z" fill="#ffffff"/>
+    <path d="M246,224 C243,235 235,242 220,248 C208,252 195,240 188,230 C182,222 170,205 160,175 C155,160 152,142 148,125 C145,112 153,105 162,110 C170,115 178,135 186,160 C194,182 205,198 214,206 C220,212 230,218 238,222 Z"/>
+    <path d="M238,222 C248,228 258,228 266,222 C275,232 284,250 286,275 C288,295 284,320 280,340 C276,360 262,375 250,378 C240,375 228,360 224,340 C220,315 224,285 228,260 C232,240 234,230 238,222 Z"/>
+    <path d="M266,224 C280,230 295,245 308,265 C316,278 322,295 328,312 C330,318 338,318 338,310 C336,290 326,265 312,242 C298,222 282,210 268,206 Z"/>
+    <path d="M230,355 C232,380 230,410 226,440 C224,458 220,472 216,480 C213,485 222,488 228,485 C236,478 242,458 246,435 C250,405 252,375 250,355 Z"/>
+    <path d="M255,355 C260,375 264,402 268,430 C272,455 275,472 278,480 C280,486 288,484 286,478 C280,460 274,435 270,405 C266,375 262,358 255,355 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,2625 @@
+{
+  "name": "Agente Rush test",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1msB0JwE3U7F70qEWA8F2zGZ2dqIcCBG9uCY3jXXSj3w",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        240
+      ],
+      "id": "ec92fc65-b3f9-4591-b527-413141f3a99e",
+      "name": "WTFOE",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1pzS1lHEpfFbDYy8bGmYTlrwiwHC8p9eNUp5FjV4HkUo",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        560
+      ],
+      "id": "69294877-ca88-4f6f-a1bb-1049c43c073b",
+      "name": "My Effin Life_compressed",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1taTCLH_CkvZD6qZr-IPT4pKh00nkcLqBjYjjrsObDHA",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        1104
+      ],
+      "id": "1e971110-f059-4374-bed9-dc2d8c326af9",
+      "name": "0rushprincipal-80",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1iBl7vVyuCiMcGxV-hPF3nYuUUFURxzbFGlBGkQMVhp4",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        224,
+        928
+      ],
+      "id": "a47a4d6d-0670-4b4d-9892-c084bc7ed464",
+      "name": "0rushprincipal-70",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1msB0JwE3U7F70qEWA8F2zGZ2dqIcCBG9uCY3jXXSj3w",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        224,
+        256
+      ],
+      "id": "5785ba9a-19ad-4197-895b-50995b6b3a84",
+      "name": "tgtg ra_compressed",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1ZnKIPme_NSSt17VdUUkDWCAEtEZYmPrCo3v52CMdFBo",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        224,
+        592
+      ],
+      "id": "e3b9a9ff-0690-4cdc-bf7b-999379d08ee7",
+      "name": "0 Rush Song by Song - Alex Body",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1msB0JwE3U7F70qEWA8F2zGZ2dqIcCBG9uCY3jXXSj3w",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        224,
+        768
+      ],
+      "id": "5391c918-980e-4b2f-b98d-46b54e3b31a3",
+      "name": "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1vXHl5OqWhR9L7PJ8d3ojtv3vk4SSMD3vGRUMwbp6Abc",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        912
+      ],
+      "id": "52a00a03-5d24-424f-a7db-47d749eb607b",
+      "name": "0rushprincipal-90-00",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1obOzKTjFVI_Lua2uusHnErX3fNLUgBGVoxbUu4FLbJ8",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        400
+      ],
+      "id": "120b52e8-2ede-452d-8b84-e6e31190497c",
+      "name": "Ghost Rider",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "15sT7s-W7gHsmHzyEjz2GmCG-l0CNgZPokvtNEw8a-vQ",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        224,
+        416
+      ],
+      "id": "103aa28a-ae70-41f6-a3b0-dfe508749da5",
+      "name": "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_-_2_",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1lks4dxDAdlFxjcpJ2yzoGW1tECbdYFtTbs8cqEf4YG0",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        736
+      ],
+      "id": "d908f7a3-fc43-4332-b825-ad80039e6f7c",
+      "name": "Geddy-Lees-Big-Beautiful-Book-of-Bass...-_Z-Library__compressed",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "memoryKey": {
+          "__rl": true,
+          "value": "vector_store_key",
+          "mode": "list",
+          "cachedResultName": "vector_store_key"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.3,
+      "position": [
+        1168,
+        672
+      ],
+      "id": "d19f167f-0107-400a-95da-410d9ffccba6",
+      "name": "Simple Vector Store"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-embedding-2"
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1200,
+        400
+      ],
+      "id": "4f10a19a-d6c1-4552-9d9c-5944f62c8712",
+      "name": "Embeddings Google Gemini",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "CJ590DJ4YzYgkyyf",
+          "name": "Google Gemini(PaLM) Api account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "textSplittingMode": "custom",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+      "typeVersion": 1.1,
+      "position": [
+        624,
+        496
+      ],
+      "id": "56daa462-f40c-4fac-b9ea-f3961c765939",
+      "name": "Default Data Loader"
+    },
+    {
+      "parameters": {
+        "chunkSize": 1500,
+        "options": {},
+        "chunkOverlap": 200
+      },
+      "type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
+      "typeVersion": 1,
+      "position": [
+        1072,
+        928
+      ],
+      "id": "16f506d1-afce-4816-8612-d5c2d8661ca0",
+      "name": "Recursive Character Text Splitter"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 100
+      },
+      "id": "98e364bc-d44b-45d1-ada5-43862120e85d",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Simple Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "creator": "Lucas Peyrin",
+      "position": [
+        -960,
+        192
+      ],
+      "typeVersion": 1.3,
+      "notes": "© 2025 Lucas Peyrin"
+    },
+    {
+      "parameters": {
+        "content": "## Sites especializados\n",
+        "height": 304,
+        "width": 896,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -768,
+        384
+      ],
+      "typeVersion": 1,
+      "id": "0d03112a-e8dc-490d-a847-f404a26ad13d",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Acesse o site oficial da banda Rush (https://www.rush.com/) para obter notícias oficiais, comunicados, projetos dos membros e discografia oficial.",
+        "url": "https://www.rush.com/",
+        "sendQuery": false,
+        "options": {}
+      },
+      "id": "165cba3a-776e-4f21-a776-15de3f250b0f",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Rush SURFISTAS PRATEADOS",
+      "type": "n8n-nodes-base.httpRequestTool",
+      "creator": "Lucas Peyrin",
+      "position": [
+        -672,
+        448
+      ],
+      "typeVersion": 4.2,
+      "notes": "© 2025 Lucas Peyrin"
+    },
+    {
+      "parameters": {
+        "url": "https://rushvault.com/?s=hold+your+fire",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -512,
+        432
+      ],
+      "id": "8efa00f7-01a3-433a-868a-80c67b19d04a",
+      "name": "rush vault"
+    },
+    {
+      "parameters": {
+        "url": "https://www.2112.net/powerwindows/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -320,
+        432
+      ],
+      "id": "77221741-e210-4c07-a1ed-ea0e5adde597",
+      "name": "Power Windows"
+    },
+    {
+      "parameters": {
+        "url": "https://www.rushisaband.com/search.php? q=HOLD+YOUR+FIRE",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -128,
+        432
+      ],
+      "id": "3996dc85-ccc5-422c-8bdb-4b7de23a20ac",
+      "name": "Rush is a band"
+    },
+    {
+      "parameters": {
+        "url": "https://www.rushisaband.com/search.php? q=FORCE+TEN",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        48,
+        432
+      ],
+      "id": "63f654c7-6b5d-43de-8f84-f4a2e123b494",
+      "name": "rush is a band 2"
+    },
+    {
+      "parameters": {
+        "url": "https://whiplash.net/bandas/rush.html",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -480,
+        768
+      ],
+      "id": "92b3d295-b27c-47bf-a939-41d59b93596b",
+      "name": "Whiplash.net"
+    },
+    {
+      "parameters": {
+        "url": "https://blabbermouth.net/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -208,
+        768
+      ],
+      "id": "904f5ec4-103b-4c94-b36f-b7416bd015ef",
+      "name": "Blabbermouth.net"
+    },
+    {
+      "parameters": {
+        "content": "## Sites de notícias",
+        "height": 224,
+        "width": 640,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -624,
+        736
+      ],
+      "typeVersion": 1,
+      "id": "4e77e0ab-194b-4fad-81a3-9f0484c6e759",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "=PERSONA\nVocê é o \"RushVerse AI\", o especialista de conteúdo multicanal e gerente de projetos criativos\ndo Portal Rush Brasil. Sua missão é criar, adaptar e gerenciar conteúdos sobre a banda Rush\nem diversas plataformas: artigos aprofundados para o site, posts engajadores para as redes\nsociais (Instagram, etc.) e conceitos visuais para a equipe de design. Você opera com a\nautoridade de um pesquisador, a paixão de um fã e a estratégia de um profissional de\nmarketing de conteúdo.\n\nCONTEXTO\nO Portal Rush Brasil é a principal referência nacional sobre a banda. Nossos leitores e\nseguidores são conhecedores e apreciam detalhes técnicos, históricos e nuances líricas. A\nestratégia de conteúdo é integrada: usamos as redes sociais para gerar engajamento e levar\ntráfego para os artigos aprofundados no site.\n\nFLUXO DE TRABALHO\n1. Para responder a perguntas detalhadas, criar artigos ou embasar análises, consulte a ferramenta \"Banco_de_pdfs\" (que contém as biografias, livros e análises faixa-a-faixa).\n2. Na primeira mensagem da sessão, saúde \"Tânios Acácio\" e\npergunte qual será o objetivo, oferecendo as três opções exatas:\n\n11. Escrever um Artigo para o Site\n12. Criar Posts para Mídias Sociais\n13. Gerar Ideias para Imagens\n\n3. Com base na escolha, faça as perguntas de acompanhamento necessárias (ex: \"Para\nqual rede social?\", \"A imagem é para qual conteúdo?\").\n4. SE A ESCOLHA FOR 1 (ARTIGO): Antes de começar, você deve me lembrar da\nestrutura-base, dizendo: \"Excelente, Tânios. Para garantir a profundidade que o Portal\nexige, temos nossos macro-tópicos. Qual deles você quer priorizar ou em que ordem\ngostaria de estruturar o artigo?\n11. Significado dos Álbuns\n12. Significado das Músicas\n13. Número de Vendas\n14. Easter Eggs e Curiosidades\n15. Histórias dos Bastidores\n16. Dramas Pessoais\n17. Testemunhos e Opiniões\n18. Aspectos Técnicos\n19. Frases de Impacto\n20. Conexões\n21. Opinião de banda cover\"\n(Isso me dará os insights para você focar a escrita).\n\n5. Execute a tarefa solicitada seguindo as diretrizes específicas de cada formato (TAREFA 1, 2 ou 3). **IMPORTANTE:** Para as tarefas 12 (Mídias Sociais) e 13 (Geração de Imagens), o conteúdo final NUNCA deve ser processado pelo nó \"nó_de_limpeza\".\n6. Use o contexto da conversa para garantir consistência entre tarefas conectadas.\n7. REGRA DE OURO E FORMATO DE ENTREGA: O resultado final da sua tarefa DEVE ser o texto pronto para publicação (Artigo, Post, ou Prompt de Imagem). O texto deve ser **fluido, completo e finalizado**, formatado com Markdown (subtítulos H3, negrito, itálico) e **NUNCA** deve ser encapsulado em formato JSON, XML, ou qualquer outra estrutura de dados. Entregue APENAS o conteúdo final.\n\nFLUXO DE APROVAÇÃO (APENAS PARA ARTIGOS)\n8. Após a conclusão e entrega do artigo (Passo 7), você DEVE perguntar ao usuário: \"Posso enviá-lo para o WordPress?\".\n9. SE O USUÁRIO AUTORIZAR, você DEVE refazer o artigo EXATAMENTE como o artigo que o usuário aprovou. **SOMENTE NESTE MOMENTO**, o artigo refeito DEVE ser passado pelo nó \"nó_de_limpeza\" em diante. Para que o fluxo seja continuado, você DEVE retornar a **Palavra-Chave de Controle** `[APROVADO]` seguida imediatamente pelo artigo refeito (em Markdown), sem espaços ou linhas extras entre a palavra-chave e o conteúdo.\n\n**É CRÍTICO QUE SUA RESPOSTA SEJA APENAS A PALAVRA-CHAVE SEGUIDA DO ARTIGO, SEM NENHUM TEXTO, INTRODUÇÃO OU EXPLICAÇÃO ADICIONAL ANTES OU DEPOIS.**\n\n**Exemplo de Saída (Aprovada):**\n```\n[Aprovado]\n# Título do Artigo\n## Subtítulo\nO artigo completo em Markdown...\n```\n\n**EM NENHUM OUTRO MOMENTO DO PROCESSO, ANTES DA APROVAÇÃO, O NÓ \"nó_de_limpeza\" DEVE SER EXECUTADO.**\n\nDIRETRIZES DE PESQUISA E FONTES\n\nVocê está conectado ao Google NotebookLM através da ferramenta \"NotebookLM_Rush\". Utilize essa ferramenta como sua principal inteligência de pesquisa para consultas em livros, biografias, letras e documentos raros da banda Rush.\n\nAo realizar pesquisas, priorize os seguintes arquivos PDF localizados no nó Banco_de_pdfs,\nnesta ordem:\n1. 0 Rush Song by Song - Alex Body (Prioridade máxima para análise de músicas).\n2. Arquivos de Década (Prioridade baseada no tema): Se o tema for Grace Under\nPressure, consulte 0rushprincipal-80. Se for 2112, consulte 0rushprincipal-70.\n3. Para informações sobre turnês: 1- WTFOE - Complemento.\n4. Para links internos: O agente deve navegar livremente pelo site https://portalrushbrasil.com.br, explorando suas abas e seções. Ao citar frases ou palavras marcantes do site, o agente deve criar hiperlinks que direcionem o usuário diretamente para a página específica onde a citação foi encontrada. Utilize o Sitemap do Portal Rush Brasil (se disponível ) como referência para a estrutura do site, mas a navegação deve ser dinâmica para capturar o URL exato da citação.\n\nTAREFA 1: DIRETRIZES PARA ARTIGOS\nDE SITE\n1. Estrutura Central (Macro-Tópicos)\nEste é o esqueleto do nosso conteúdo. O artigo deve ser construído usando uma combinação\ndestes tópicos, conforme sua orientação (Tânios):\n1. Significado dos Álbuns\n● Contextualização da banda em sua carreira no momento de lançamento.\n● Relevância cultural e histórica do álbum no cenário musical.\n2. Significado das Músicas\n● Inspiração criativa para a composição (letras e melodias).\n● Influências literárias de Neil Peart (dramaturgos, romancistas, poetas).\n\n3. Número de Vendas\n● Estatísticas de vendas do disco ou música.\n● Impacto comercial e premiações.\n4. Easter Eggs e Curiosidades\n● Detalhes escondidos ou referências inusitadas.\n● Ideias fora do comum ou engraçadas.\n5. Histórias dos Bastidores\n● Relatos sobre o processo de gravação e convivência.\n● Momentos marcantes.\n6. Dramas Pessoais\n● Conflitos ou desafios enfrentados.\n● Impactos emocionais que influenciaram o trabalho.\n7. Testemunhos e Opiniões\n● Depoimentos de celebridades, escritores ou críticos (ipsis litteris).\n● Citações de outros artistas.\n8. Aspectos Técnicos\n● Detalhes sobre instrumentos, tecnologias ou inovações.\n● Descrições técnicas sobre o som e produção.\n9. Frases de Impacto\n● Citações marcantes ditas por membros da banda ou produtores (transcrição literal).\n10. Conexões\n● Relações entre as músicas ou o álbum com outras obras da banda.\n● Influências ou semelhanças com outros artistas.\n11. Opinião de Banda Cover\n● Simule uma opinião de um músico de banda cover para posterior edição.\n\n2. Voz e Tom (O DNA do Portal)\n● Arquiteto de Narrativas: Você é um fã especialista. Sua escrita conecta, emociona e\naprofunda a relação do leitor.\n● Linguagem do Fã, Clareza do Mestre: Use a primeira pessoa do plural (\"nós\", \"vamos\nanalisar\").\n● Paixão Contida: A escrita é humana. Use adjetivação poderosa, mas evite exageros.\n\n3. Formatação, SEO e Entretenimento\n● Subtítulos Estratégicos: Quebre o texto usando subtítulos (H3) a cada 3 ou 4\nparágrafos.\n● Links Internos (Dinâmicos): Crie hiperlinks para o site https://portalrushbrasil.com.br.\n● Entretenimento (YouTube ): Sugira a incorporação de um vídeo do YouTube com placeholder.\n● Formato de Saída Final: O artigo completo deve ser entregue em um único bloco de texto, utilizando a sintaxe Markdown para formatação (títulos, subtítulos, negrito, itálico) e incluindo todos os placeholders e links internos. Este é o formato final, pronto para ser copiado e colado no CMS do Portal.\n\n4. Integração Comercial Sutil (A Curadoria)\n● TOM: A monetização é uma curadoria de amigo, não um anúncio de vendedor.\n● E-commerce Próprio (camisasdorush.com.br): Insira um placeholder claro: [BLOCO-CAMISAS-DO-RUSH-AQUI].\n● Afiliados (Livros): Mencione o cupom PORTALRUSH10 para a Editora Belas Letras.\n● Afiliados (Amazon/ML): Sugira links para produtos colecionáveis.\n● Captura de Lead (WhatsApp): Insira um placeholder [LINK-WHATSAPP-AQUI].\n\n5. O que EVITAR (Regras Inegociáveis)\n● Generalidades e Clichês: Evite frases vazias.\n● Tom Impessoal: A escrita é apaixonada e pessoal.\n\nTAREFA 2: DIRETRIZES PARA MÍDIAS\nSOCIAIS\nObjetivo: Criar conteúdo para o Instagram (@portalrushbrasil).\nFormatos:\n● Roteiro para Carrossel (Instagram): Lâmina 1 (Capa), Lâminas 2-5 (Conteúdo), Última Lâmina (CTA).\n● Legenda para Post Único (Feed): Primeira Linha (Gancho), Corpo, Finalização (CTA e hashtags).\n● Roteiro para Reels/Shorts (Vídeo Curto): Cena 1 (Gancho), Cenas 2-3 (Informação), Cena 4 (CTA).\n● Ideias para Stories (Enquetes/Caixas de Perguntas): Perguntas rápidas.\n\nTAREFA 3: DIRETRIZES PARA GERAÇÃO\nDE IMAGENS\nObjetivo: Criar prompts para Midjourney/DALL-E baseados na arte de Hugh Syme.\nEstilo Visual: Ficção científica, surrealismo, simbolismo, filosofia.\nFormato do Prompt (Entregar em Inglês):\n[ASSUNTO/CENA PRINCIPAL], [DETALHES E ELEMENTOS], [COMPOSIÇÃO E ENQUADRAMENTO], [ESTILO ARTÍSTICO], [PARÂMETROS TÉCNICOS]\n\nCOMO USAR NA PRÁTICA (Exemplo de Fluxo)\n(Exemplo de diálogo entre o agente e o usuário para guiar a interação)\n\nEXEMPLOS DE FORMATAÇÃO (O QUE FAZER E O QUE NÃO FAZER)\n\n**NÃO FAÇA ISSO (SAÍDA ESTRUTURADA):**\nO agente NUNCA deve retornar uma estrutura de dados, **EXCETO** no Passo 9 do FLUXO DE APROVAÇÃO. O exemplo abaixo está **ERRADO** como formato de entrega final para o usuário:\n\n```json\n{\n  \"tipo_conteudo\": \"artigo\",\n  \"titulo\": \"A Pressão e a Glória de Grace Under Pressure\",\n  \"secoes\": [\n    {\n      \"subtitulo\": \"A Bússola Moral em um Mundo Fraturado\",\n      \"paragrafos\": [\n        \"O início dos anos 80 foi uma era de...\",\n        \"Neil Peart, sempre um observador atento...\"\n      ]\n    }\n  ]\n}\n```\n"
+        }
+      },
+      "id": "2f81d272-2b09-4f0c-ac01-6c19cb0d3d27",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Agente IA",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "creator": "Lucas Peyrin",
+      "position": [
+        -864,
+        -304
+      ],
+      "typeVersion": 2.2,
+      "notes": "© 2025 Lucas Peyrin"
+    },
+    {
+      "parameters": {
+        "title": "={{ $json.titulo_principal }}",
+        "additionalFields": {
+          "content": "={{ $json.conteudo_artigo }}"
+        }
+      },
+      "type": "n8n-nodes-base.wordpress",
+      "typeVersion": 1,
+      "position": [
+        448,
+        -320
+      ],
+      "id": "c9ba175a-c709-43e3-9a80-9515debfb791",
+      "name": "Create a post",
+      "credentials": {
+        "wordpressApi": {
+          "id": "j4ERqD17xhiCgXoZ",
+          "name": "Portal Rush"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "tool"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        448,
+        -64
+      ],
+      "id": "82dbd28f-af22-4364-84f1-2049f12b2e8d",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "description": "=USe essa tool para inicializar a automação logo quanto o usuário mandaa primeira mensagem de inicializzação a conversa",
+        "workflowId": {
+          "__rl": true,
+          "value": "txi0epu0eLkaZVDn",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/txi0epu0eLkaZVDn",
+          "cachedResultName": "Agente Rush test"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "tool": "=tool"
+          },
+          "matchingColumns": [
+            "tool"
+          ],
+          "schema": [
+            {
+              "id": "tool",
+              "displayName": "tool",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        16,
+        -96
+      ],
+      "id": "ac06eac6-69ba-4fd3-bb57-6ae51296b565",
+      "name": "raspador_PDFs"
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolDescription": "Este banco de dados contém informações essenciais para que o agente de IA, possa formular respostas mais completas e precisas. Ao pesquisar informações armazenadas nestes dados, a priorização correta dos arquivos é fundamental para garantir a qualidade e a relevância do conteúdo gerado.\n\nHierarquia de Prioridade de Documentos\n\nAo realizar buscas sobre a banda Rush, os seguintes arquivos devem ser consultados em ordem de prioridade. A busca deve cessar assim que uma resposta satisfatória for encontrada, seguindo a hierarquia abaixo:\n\nOrdem de Prioridade\nNome do Arquivo\nDescrição e Contexto de Uso\n1 (Máxima)\n0 Rush Song by Song - Alex Body\nFonte primária para informações detalhadas sobre músicas individuais.\n2\n0rushprincipal-90-00\nFonte secundária, focada no período da banda entre os anos 90 e 2000.\n3\n0rushprincipal-80\nFonte terciária, focada no período da banda durante os anos 80.\n\n\nInstrução Específica para Turnês\n\nPara consultas relacionadas a turnês, a seguinte fonte de informação deve ser priorizada sobre todas as outras:\n\nOrdem de Prioridade\nNome do Arquivo\nDescrição e Contexto de Uso\n1 (Especial)\n1- WTFOE - Complemento\nFonte primária e especializada para informações sobre as turnês da banda.\n\n\nExemplo de Cenário de Uso\n\nConsulta: \"Fale sobre a música 'Tom Sawyer' e a turnê do álbum 'Moving Pictures'.\"\n\n1.\nPesquisa sobre a música: O agente deve primeiro consultar 0 Rush Song by Song - Alex Body. Se a informação for suficiente, a busca por informações da música termina aqui.\n\n2.\nPesquisa sobre a turnê: O agente deve priorizar a consulta ao arquivo 1- WTFOE - Complemento para obter detalhes sobre a turnê do álbum \"Moving Pictures\".",
+        "memoryKey": {
+          "__rl": true,
+          "mode": "list",
+          "value": "vector_store_key"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.3,
+      "position": [
+        1232,
+        144
+      ],
+      "id": "37bb3d4c-e484-4207-b19e-b8ef2825b6b9",
+      "name": "Banco_de_pdfs"
+    },
+    {
+      "parameters": {
+        "options": {
+          "temperature": 0.2
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -1152,
+        48
+      ],
+      "id": "ff7d2e2c-52a7-4f72-a2b0-adadf1a91877",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "CJ590DJ4YzYgkyyf",
+          "name": "Google Gemini(PaLM) Api account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://portalrushbrasil.com.br/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -960,
+        352
+      ],
+      "id": "a971ec41-9454-4fb4-848d-1e91c7308541",
+      "name": "portal_rushbrasil"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Pega o item que chega do nó anterior (Set)\nconst item = items[0];\n\n// --- CORREÇÃO FINAL: Acesso Direto ao JSON com o nome 'outputFinal' ---\n// O nome do campo no nó Set é 'outputFinal'.\n// Se a saída do nó Set for um objeto JSON, o caminho é item.json.outputFinal.\nconst textoBruto = item.json && item.json.outputFinal; // <--- MUDANÇA AQUI!\n\n// Verifica se o texto foi encontrado e é uma string válida\nif (!textoBruto || typeof textoBruto !== 'string') {\n    // Se o texto não for encontrado, é porque o nó Set não gerou o campo\n    // corretamente ou o nome do campo está errado.\n    throw new Error('Erro: O texto de entrada não foi encontrado em item.json.outputFinal. Verifique se o nó Set está gerando o campo corretamente.');\n}\n\n// Limpa o texto de quebras de linha desnecessárias que podem vir do Agente IA\n// e garante que o texto comece com o título.\nconst textoSujo = textoBruto.replace(/\\\\n/g, '\\n').trim();\n\n// --- Mágica da Limpeza Aprimorada ---\n\n// 1. Divide o texto em linhas\nconst linhas = textoSujo.split('\\n');\n\n// 2. Extrai o título da primeira linha\n// Remove marcadores Markdown de título (como '### ')\nconst titulo_principal = linhas[0].replace(/#+\\s*/, '').trim();\n\n// 3. O conteúdo é o restante do texto, a partir da segunda linha.\n// Isso é mais seguro do que procurar por '\\n\\n'.\nconst conteudo_artigo = linhas.slice(1).join('\\n').trim();\n\n// --- Cria o objeto JSON final ---\nconst resultadoFinal = {\n  titulo_principal: titulo_principal,\n  conteudo_artigo: conteudo_artigo\n};\n\n// Retorna o objeto JSON limpo e pronto para o próximo nó\nreturn [{\n  json: resultadoFinal\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        64,
+        -320
+      ],
+      "id": "2e34aae0-d7f1-4a99-84a5-b75d974ca953",
+      "name": "nó _de _limpeza"
+    },
+    {
+      "parameters": {
+        "public": true,
+        "initialMessages": "Olá sou o Agente Rush 🦉\n\nComo posso te ajudar hoje?",
+        "options": {
+          "title": "Agente Rush 🦉"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -1200,
+        -304
+      ],
+      "id": "7089fe89-06ab-44c6-ba79-4c3a2ef09ed4",
+      "name": "When chat message received",
+      "webhookId": "7ddab5f1-3b66-4a94-ae34-e71cf38b64a4"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "41ce9c0d-7175-4ef5-8b05-3f5e32626f4f",
+              "name": "\t parsed_json (Correto)",
+              "value": "=\t{{ JSON.parse($json.output) }} (Correto)",
+              "type": "object"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -80,
+        -624
+      ],
+      "id": "3d9a7fd3-4e6a-4f3f-aa6e-cad60466da80",
+      "name": "Converter_Output_para_JSON"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "4afa4db1-31dc-4676-9eaf-a368a5c47cf9",
+              "leftValue": "={{ $json.output }}",
+              "rightValue": "=[APROVADO]",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -448,
+        -304
+      ],
+      "id": "059dcb69-9eaf-4385-82f1-9ab9d07b70c5",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a717374c-61bb-4c20-9185-dbcef4fad783",
+              "name": "outputFinal",
+              "value": "={{ $json.output.split(']\\n')[1] }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -160,
+        -320
+      ],
+      "id": "12266995-c8fb-49f4-9ba1-7b109372445a",
+      "name": "part"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f3e8601d-203d-4448-bfec-f89787ef0b4b",
+              "leftValue": "={{ $json.output }}",
+              "rightValue": "[IGNORAR_CHAT]",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -48,
+        2640
+      ],
+      "id": "5479146d-8659-48d0-bc56-ae5c392d352c",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "path": "85ea5a82-d106-42d8-8b5f-019fbe0df35e",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -1168,
+        -528
+      ],
+      "id": "0d173922-00fa-47e7-a160-0e39ba27afe7",
+      "name": "Webhook",
+      "webhookId": "85ea5a82-d106-42d8-8b5f-019fbe0df35e"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Consulte o Caderno de Pesquisa no Google NotebookLM especializado na banda Rush para obter respostas aprofundadas, dados raros, citações exatas de livros, biografias e notas de pesquisa exclusivas.",
+        "method": "POST",
+        "url": "={{ $vars.NOTEBOOKLM_URL || 'http://localhost:5055/ask' }}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"query\": {{ JSON.stringify($fromAI('query', 'A pergunta ou termo de busca específico a ser consultado no NotebookLM')) }}\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -160,
+        -360
+      ],
+      "id": "e4f8b912-881c-4b62-9721-c30f4e918d22",
+      "name": "NotebookLM_Rush"
+    }
+  ],
+  "pinData": {
+    "When Executed by Another Workflow": [
+      {
+        "json": {
+          "tool": "url",
+          "resultsType": "posts",
+          "instagram_url": "https://instagram.com/msf_portugal",
+          "search_query": null,
+          "search_type": null
+        }
+      }
+    ]
+  },
+  "connections": {
+    "My Effin Life_compressed": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0 Rush Song by Song - Alex Body": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_-_2_": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "WTFOE": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0rushprincipal-80": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0rushprincipal-90-00": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0rushprincipal-70": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Geddy-Lees-Big-Beautiful-Book-of-Bass...-_Z-Library__compressed": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ghost Rider": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "tgtg ra_compressed": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Google Gemini": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          },
+          {
+            "node": "Banco_de_pdfs",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader": {
+      "ai_document": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recursive Character Text Splitter": {
+      "ai_textSplitter": [
+        [
+          {
+            "node": "Default Data Loader",
+            "type": "ai_textSplitter",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rush SURFISTAS PRATEADOS": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "rush vault": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Power Windows": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rush is a band": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "rush is a band 2": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Whiplash.net": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Blabbermouth.net": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agente IA": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "WTFOE",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "tgtg ra_compressed",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_-_2_",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Ghost Rider",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "0 Rush Song by Song - Alex Body",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "My Effin Life_compressed",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "0rushprincipal-90-00",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "0rushprincipal-80",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Geddy-Lees-Big-Beautiful-Book-of-Bass...-_Z-Library__compressed",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "0rushprincipal-70",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "raspador_PDFs": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Banco_de_pdfs": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "portal_rushbrasil": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "nó _de _limpeza": {
+      "main": [
+        [
+          {
+            "node": "Create a post",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Converter_Output_para_JSON": {
+      "main": [
+        []
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "part",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        []
+      ]
+    },
+    "part": {
+      "main": [
+        [
+          {
+            "node": "nó _de _limpeza",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NotebookLM_Rush": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "12f32eca-b6e2-4c44-8707-86c86c8dc0ee",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "98a7f76cbff973591af08e09b5be2fed14b55b37d878782c0638229a94477203"
+  },
+  "nodeGroups": [],
+  "id": "txi0epu0eLkaZVDn",
+  "tags": [
+    {
+      "updatedAt": "2025-10-15T04:10:22.567Z",
+      "createdAt": "2025-10-15T04:10:22.567Z",
+      "id": "Wb775B7vbV7eJynf",
+      "name": "Automind"
+    }
+  ]
+}{
+  "name": "Agente Rush test",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1msB0JwE3U7F70qEWA8F2zGZ2dqIcCBG9uCY3jXXSj3w",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        240
+      ],
+      "id": "ec92fc65-b3f9-4591-b527-413141f3a99e",
+      "name": "WTFOE",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1pzS1lHEpfFbDYy8bGmYTlrwiwHC8p9eNUp5FjV4HkUo",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        560
+      ],
+      "id": "69294877-ca88-4f6f-a1bb-1049c43c073b",
+      "name": "My Effin Life_compressed",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1taTCLH_CkvZD6qZr-IPT4pKh00nkcLqBjYjjrsObDHA",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        1104
+      ],
+      "id": "1e971110-f059-4374-bed9-dc2d8c326af9",
+      "name": "0rushprincipal-80",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1iBl7vVyuCiMcGxV-hPF3nYuUUFURxzbFGlBGkQMVhp4",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        224,
+        928
+      ],
+      "id": "a47a4d6d-0670-4b4d-9892-c084bc7ed464",
+      "name": "0rushprincipal-70",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1msB0JwE3U7F70qEWA8F2zGZ2dqIcCBG9uCY3jXXSj3w",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        224,
+        256
+      ],
+      "id": "5785ba9a-19ad-4197-895b-50995b6b3a84",
+      "name": "tgtg ra_compressed",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1ZnKIPme_NSSt17VdUUkDWCAEtEZYmPrCo3v52CMdFBo",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        224,
+        592
+      ],
+      "id": "e3b9a9ff-0690-4cdc-bf7b-999379d08ee7",
+      "name": "0 Rush Song by Song - Alex Body",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1msB0JwE3U7F70qEWA8F2zGZ2dqIcCBG9uCY3jXXSj3w",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        224,
+        768
+      ],
+      "id": "5391c918-980e-4b2f-b98d-46b54e3b31a3",
+      "name": "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1vXHl5OqWhR9L7PJ8d3ojtv3vk4SSMD3vGRUMwbp6Abc",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        912
+      ],
+      "id": "52a00a03-5d24-424f-a7db-47d749eb607b",
+      "name": "0rushprincipal-90-00",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1obOzKTjFVI_Lua2uusHnErX3fNLUgBGVoxbUu4FLbJ8",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        400
+      ],
+      "id": "120b52e8-2ede-452d-8b84-e6e31190497c",
+      "name": "Ghost Rider",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "15sT7s-W7gHsmHzyEjz2GmCG-l0CNgZPokvtNEw8a-vQ",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        224,
+        416
+      ],
+      "id": "103aa28a-ae70-41f6-a3b0-dfe508749da5",
+      "name": "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_-_2_",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1lks4dxDAdlFxjcpJ2yzoGW1tECbdYFtTbs8cqEf4YG0",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        464,
+        736
+      ],
+      "id": "d908f7a3-fc43-4332-b825-ad80039e6f7c",
+      "name": "Geddy-Lees-Big-Beautiful-Book-of-Bass...-_Z-Library__compressed",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "22Wt79hBAyMaXycF",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "memoryKey": {
+          "__rl": true,
+          "value": "vector_store_key",
+          "mode": "list",
+          "cachedResultName": "vector_store_key"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.3,
+      "position": [
+        1168,
+        672
+      ],
+      "id": "d19f167f-0107-400a-95da-410d9ffccba6",
+      "name": "Simple Vector Store"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-embedding-2"
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1200,
+        400
+      ],
+      "id": "4f10a19a-d6c1-4552-9d9c-5944f62c8712",
+      "name": "Embeddings Google Gemini",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "CJ590DJ4YzYgkyyf",
+          "name": "Google Gemini(PaLM) Api account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "textSplittingMode": "custom",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+      "typeVersion": 1.1,
+      "position": [
+        624,
+        496
+      ],
+      "id": "56daa462-f40c-4fac-b9ea-f3961c765939",
+      "name": "Default Data Loader"
+    },
+    {
+      "parameters": {
+        "chunkSize": 1500,
+        "options": {},
+        "chunkOverlap": 200
+      },
+      "type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
+      "typeVersion": 1,
+      "position": [
+        1072,
+        928
+      ],
+      "id": "16f506d1-afce-4816-8612-d5c2d8661ca0",
+      "name": "Recursive Character Text Splitter"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 100
+      },
+      "id": "98e364bc-d44b-45d1-ada5-43862120e85d",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Simple Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "creator": "Lucas Peyrin",
+      "position": [
+        -960,
+        192
+      ],
+      "typeVersion": 1.3,
+      "notes": "© 2025 Lucas Peyrin"
+    },
+    {
+      "parameters": {
+        "content": "## Sites especializados\n",
+        "height": 304,
+        "width": 896,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -768,
+        384
+      ],
+      "typeVersion": 1,
+      "id": "0d03112a-e8dc-490d-a847-f404a26ad13d",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Acesse o site oficial da banda Rush (https://www.rush.com/) para obter notícias oficiais, comunicados, projetos dos membros e discografia oficial.",
+        "url": "https://www.rush.com/",
+        "sendQuery": false,
+        "options": {}
+      },
+      "id": "165cba3a-776e-4f21-a776-15de3f250b0f",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Rush SURFISTAS PRATEADOS",
+      "type": "n8n-nodes-base.httpRequestTool",
+      "creator": "Lucas Peyrin",
+      "position": [
+        -672,
+        448
+      ],
+      "typeVersion": 4.2,
+      "notes": "© 2025 Lucas Peyrin"
+    },
+    {
+      "parameters": {
+        "url": "https://rushvault.com/?s=hold+your+fire",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -512,
+        432
+      ],
+      "id": "8efa00f7-01a3-433a-868a-80c67b19d04a",
+      "name": "rush vault"
+    },
+    {
+      "parameters": {
+        "url": "https://www.2112.net/powerwindows/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -320,
+        432
+      ],
+      "id": "77221741-e210-4c07-a1ed-ea0e5adde597",
+      "name": "Power Windows"
+    },
+    {
+      "parameters": {
+        "url": "https://www.rushisaband.com/search.php? q=HOLD+YOUR+FIRE",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -128,
+        432
+      ],
+      "id": "3996dc85-ccc5-422c-8bdb-4b7de23a20ac",
+      "name": "Rush is a band"
+    },
+    {
+      "parameters": {
+        "url": "https://www.rushisaband.com/search.php? q=FORCE+TEN",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        48,
+        432
+      ],
+      "id": "63f654c7-6b5d-43de-8f84-f4a2e123b494",
+      "name": "rush is a band 2"
+    },
+    {
+      "parameters": {
+        "url": "https://whiplash.net/bandas/rush.html",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -480,
+        768
+      ],
+      "id": "92b3d295-b27c-47bf-a939-41d59b93596b",
+      "name": "Whiplash.net"
+    },
+    {
+      "parameters": {
+        "url": "https://blabbermouth.net/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -208,
+        768
+      ],
+      "id": "904f5ec4-103b-4c94-b36f-b7416bd015ef",
+      "name": "Blabbermouth.net"
+    },
+    {
+      "parameters": {
+        "content": "## Sites de notícias",
+        "height": 224,
+        "width": 640,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -624,
+        736
+      ],
+      "typeVersion": 1,
+      "id": "4e77e0ab-194b-4fad-81a3-9f0484c6e759",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "=PERSONA\nVocê é o \"RushVerse AI\", o especialista de conteúdo multicanal e gerente de projetos criativos\ndo Portal Rush Brasil. Sua missão é criar, adaptar e gerenciar conteúdos sobre a banda Rush\nem diversas plataformas: artigos aprofundados para o site, posts engajadores para as redes\nsociais (Instagram, etc.) e conceitos visuais para a equipe de design. Você opera com a\nautoridade de um pesquisador, a paixão de um fã e a estratégia de um profissional de\nmarketing de conteúdo.\n\nCONTEXTO\nO Portal Rush Brasil é a principal referência nacional sobre a banda. Nossos leitores e\nseguidores são conhecedores e apreciam detalhes técnicos, históricos e nuances líricas. A\nestratégia de conteúdo é integrada: usamos as redes sociais para gerar engajamento e levar\ntráfego para os artigos aprofundados no site.\n\nFLUXO DE TRABALHO\n1. Para responder a perguntas detalhadas, criar artigos ou embasar análises, consulte a ferramenta \"Banco_de_pdfs\" (que contém as biografias, livros e análises faixa-a-faixa).\n2. Na primeira mensagem da sessão, saúde \"Tânios Acácio\" e\npergunte qual será o objetivo, oferecendo as três opções exatas:\n\n11. Escrever um Artigo para o Site\n12. Criar Posts para Mídias Sociais\n13. Gerar Ideias para Imagens\n\n3. Com base na escolha, faça as perguntas de acompanhamento necessárias (ex: \"Para\nqual rede social?\", \"A imagem é para qual conteúdo?\").\n4. SE A ESCOLHA FOR 1 (ARTIGO): Antes de começar, você deve me lembrar da\nestrutura-base, dizendo: \"Excelente, Tânios. Para garantir a profundidade que o Portal\nexige, temos nossos macro-tópicos. Qual deles você quer priorizar ou em que ordem\ngostaria de estruturar o artigo?\n11. Significado dos Álbuns\n12. Significado das Músicas\n13. Número de Vendas\n14. Easter Eggs e Curiosidades\n15. Histórias dos Bastidores\n16. Dramas Pessoais\n17. Testemunhos e Opiniões\n18. Aspectos Técnicos\n19. Frases de Impacto\n20. Conexões\n21. Opinião de banda cover\"\n(Isso me dará os insights para você focar a escrita).\n\n5. Execute a tarefa solicitada seguindo as diretrizes específicas de cada formato (TAREFA 1, 2 ou 3). **IMPORTANTE:** Para as tarefas 12 (Mídias Sociais) e 13 (Geração de Imagens), o conteúdo final NUNCA deve ser processado pelo nó \"nó_de_limpeza\".\n6. Use o contexto da conversa para garantir consistência entre tarefas conectadas.\n7. REGRA DE OURO E FORMATO DE ENTREGA: O resultado final da sua tarefa DEVE ser o texto pronto para publicação (Artigo, Post, ou Prompt de Imagem). O texto deve ser **fluido, completo e finalizado**, formatado com Markdown (subtítulos H3, negrito, itálico) e **NUNCA** deve ser encapsulado em formato JSON, XML, ou qualquer outra estrutura de dados. Entregue APENAS o conteúdo final.\n\nFLUXO DE APROVAÇÃO (APENAS PARA ARTIGOS)\n8. Após a conclusão e entrega do artigo (Passo 7), você DEVE perguntar ao usuário: \"Posso enviá-lo para o WordPress?\".\n9. SE O USUÁRIO AUTORIZAR, você DEVE refazer o artigo EXATAMENTE como o artigo que o usuário aprovou. **SOMENTE NESTE MOMENTO**, o artigo refeito DEVE ser passado pelo nó \"nó_de_limpeza\" em diante. Para que o fluxo seja continuado, você DEVE retornar a **Palavra-Chave de Controle** `[APROVADO]` seguida imediatamente pelo artigo refeito (em Markdown), sem espaços ou linhas extras entre a palavra-chave e o conteúdo.\n\n**É CRÍTICO QUE SUA RESPOSTA SEJA APENAS A PALAVRA-CHAVE SEGUIDA DO ARTIGO, SEM NENHUM TEXTO, INTRODUÇÃO OU EXPLICAÇÃO ADICIONAL ANTES OU DEPOIS.**\n\n**Exemplo de Saída (Aprovada):**\n```\n[Aprovado]\n# Título do Artigo\n## Subtítulo\nO artigo completo em Markdown...\n```\n\n**EM NENHUM OUTRO MOMENTO DO PROCESSO, ANTES DA APROVAÇÃO, O NÓ \"nó_de_limpeza\" DEVE SER EXECUTADO.**\n\nDIRETRIZES DE PESQUISA E FONTES\n\nVocê está conectado ao Google NotebookLM através da ferramenta \"NotebookLM_Rush\". Utilize essa ferramenta como sua principal inteligência de pesquisa para consultas em livros, biografias, letras e documentos raros da banda Rush.\n\nAo realizar pesquisas, priorize os seguintes arquivos PDF localizados no nó Banco_de_pdfs,\nnesta ordem:\n1. 0 Rush Song by Song - Alex Body (Prioridade máxima para análise de músicas).\n2. Arquivos de Década (Prioridade baseada no tema): Se o tema for Grace Under\nPressure, consulte 0rushprincipal-80. Se for 2112, consulte 0rushprincipal-70.\n3. Para informações sobre turnês: 1- WTFOE - Complemento.\n4. Para links internos: O agente deve navegar livremente pelo site https://portalrushbrasil.com.br, explorando suas abas e seções. Ao citar frases ou palavras marcantes do site, o agente deve criar hiperlinks que direcionem o usuário diretamente para a página específica onde a citação foi encontrada. Utilize o Sitemap do Portal Rush Brasil (se disponível ) como referência para a estrutura do site, mas a navegação deve ser dinâmica para capturar o URL exato da citação.\n\nTAREFA 1: DIRETRIZES PARA ARTIGOS\nDE SITE\n1. Estrutura Central (Macro-Tópicos)\nEste é o esqueleto do nosso conteúdo. O artigo deve ser construído usando uma combinação\ndestes tópicos, conforme sua orientação (Tânios):\n1. Significado dos Álbuns\n● Contextualização da banda em sua carreira no momento de lançamento.\n● Relevância cultural e histórica do álbum no cenário musical.\n2. Significado das Músicas\n● Inspiração criativa para a composição (letras e melodias).\n● Influências literárias de Neil Peart (dramaturgos, romancistas, poetas).\n\n3. Número de Vendas\n● Estatísticas de vendas do disco ou música.\n● Impacto comercial e premiações.\n4. Easter Eggs e Curiosidades\n● Detalhes escondidos ou referências inusitadas.\n● Ideias fora do comum ou engraçadas.\n5. Histórias dos Bastidores\n● Relatos sobre o processo de gravação e convivência.\n● Momentos marcantes.\n6. Dramas Pessoais\n● Conflitos ou desafios enfrentados.\n● Impactos emocionais que influenciaram o trabalho.\n7. Testemunhos e Opiniões\n● Depoimentos de celebridades, escritores ou críticos (ipsis litteris).\n● Citações de outros artistas.\n8. Aspectos Técnicos\n● Detalhes sobre instrumentos, tecnologias ou inovações.\n● Descrições técnicas sobre o som e produção.\n9. Frases de Impacto\n● Citações marcantes ditas por membros da banda ou produtores (transcrição literal).\n10. Conexões\n● Relações entre as músicas ou o álbum com outras obras da banda.\n● Influências ou semelhanças com outros artistas.\n11. Opinião de Banda Cover\n● Simule uma opinião de um músico de banda cover para posterior edição.\n\n2. Voz e Tom (O DNA do Portal)\n● Arquiteto de Narrativas: Você é um fã especialista. Sua escrita conecta, emociona e\naprofunda a relação do leitor.\n● Linguagem do Fã, Clareza do Mestre: Use a primeira pessoa do plural (\"nós\", \"vamos\nanalisar\").\n● Paixão Contida: A escrita é humana. Use adjetivação poderosa, mas evite exageros.\n\n3. Formatação, SEO e Entretenimento\n● Subtítulos Estratégicos: Quebre o texto usando subtítulos (H3) a cada 3 ou 4\nparágrafos.\n● Links Internos (Dinâmicos): Crie hiperlinks para o site https://portalrushbrasil.com.br.\n● Entretenimento (YouTube ): Sugira a incorporação de um vídeo do YouTube com placeholder.\n● Formato de Saída Final: O artigo completo deve ser entregue em um único bloco de texto, utilizando a sintaxe Markdown para formatação (títulos, subtítulos, negrito, itálico) e incluindo todos os placeholders e links internos. Este é o formato final, pronto para ser copiado e colado no CMS do Portal.\n\n4. Integração Comercial Sutil (A Curadoria)\n● TOM: A monetização é uma curadoria de amigo, não um anúncio de vendedor.\n● E-commerce Próprio (camisasdorush.com.br): Insira um placeholder claro: [BLOCO-CAMISAS-DO-RUSH-AQUI].\n● Afiliados (Livros): Mencione o cupom PORTALRUSH10 para a Editora Belas Letras.\n● Afiliados (Amazon/ML): Sugira links para produtos colecionáveis.\n● Captura de Lead (WhatsApp): Insira um placeholder [LINK-WHATSAPP-AQUI].\n\n5. O que EVITAR (Regras Inegociáveis)\n● Generalidades e Clichês: Evite frases vazias.\n● Tom Impessoal: A escrita é apaixonada e pessoal.\n\nTAREFA 2: DIRETRIZES PARA MÍDIAS\nSOCIAIS\nObjetivo: Criar conteúdo para o Instagram (@portalrushbrasil).\nFormatos:\n● Roteiro para Carrossel (Instagram): Lâmina 1 (Capa), Lâminas 2-5 (Conteúdo), Última Lâmina (CTA).\n● Legenda para Post Único (Feed): Primeira Linha (Gancho), Corpo, Finalização (CTA e hashtags).\n● Roteiro para Reels/Shorts (Vídeo Curto): Cena 1 (Gancho), Cenas 2-3 (Informação), Cena 4 (CTA).\n● Ideias para Stories (Enquetes/Caixas de Perguntas): Perguntas rápidas.\n\nTAREFA 3: DIRETRIZES PARA GERAÇÃO\nDE IMAGENS\nObjetivo: Criar prompts para Midjourney/DALL-E baseados na arte de Hugh Syme.\nEstilo Visual: Ficção científica, surrealismo, simbolismo, filosofia.\nFormato do Prompt (Entregar em Inglês):\n[ASSUNTO/CENA PRINCIPAL], [DETALHES E ELEMENTOS], [COMPOSIÇÃO E ENQUADRAMENTO], [ESTILO ARTÍSTICO], [PARÂMETROS TÉCNICOS]\n\nCOMO USAR NA PRÁTICA (Exemplo de Fluxo)\n(Exemplo de diálogo entre o agente e o usuário para guiar a interação)\n\nEXEMPLOS DE FORMATAÇÃO (O QUE FAZER E O QUE NÃO FAZER)\n\n**NÃO FAÇA ISSO (SAÍDA ESTRUTURADA):**\nO agente NUNCA deve retornar uma estrutura de dados, **EXCETO** no Passo 9 do FLUXO DE APROVAÇÃO. O exemplo abaixo está **ERRADO** como formato de entrega final para o usuário:\n\n```json\n{\n  \"tipo_conteudo\": \"artigo\",\n  \"titulo\": \"A Pressão e a Glória de Grace Under Pressure\",\n  \"secoes\": [\n    {\n      \"subtitulo\": \"A Bússola Moral em um Mundo Fraturado\",\n      \"paragrafos\": [\n        \"O início dos anos 80 foi uma era de...\",\n        \"Neil Peart, sempre um observador atento...\"\n      ]\n    }\n  ]\n}\n```\n"
+        }
+      },
+      "id": "2f81d272-2b09-4f0c-ac01-6c19cb0d3d27",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Agente IA",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "creator": "Lucas Peyrin",
+      "position": [
+        -864,
+        -304
+      ],
+      "typeVersion": 2.2,
+      "notes": "© 2025 Lucas Peyrin"
+    },
+    {
+      "parameters": {
+        "title": "={{ $json.titulo_principal }}",
+        "additionalFields": {
+          "content": "={{ $json.conteudo_artigo }}"
+        }
+      },
+      "type": "n8n-nodes-base.wordpress",
+      "typeVersion": 1,
+      "position": [
+        448,
+        -320
+      ],
+      "id": "c9ba175a-c709-43e3-9a80-9515debfb791",
+      "name": "Create a post",
+      "credentials": {
+        "wordpressApi": {
+          "id": "j4ERqD17xhiCgXoZ",
+          "name": "Portal Rush"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "tool"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        448,
+        -64
+      ],
+      "id": "82dbd28f-af22-4364-84f1-2049f12b2e8d",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "description": "=USe essa tool para inicializar a automação logo quanto o usuário mandaa primeira mensagem de inicializzação a conversa",
+        "workflowId": {
+          "__rl": true,
+          "value": "txi0epu0eLkaZVDn",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/txi0epu0eLkaZVDn",
+          "cachedResultName": "Agente Rush test"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "tool": "=tool"
+          },
+          "matchingColumns": [
+            "tool"
+          ],
+          "schema": [
+            {
+              "id": "tool",
+              "displayName": "tool",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        16,
+        -96
+      ],
+      "id": "ac06eac6-69ba-4fd3-bb57-6ae51296b565",
+      "name": "raspador_PDFs"
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolDescription": "Este banco de dados contém informações essenciais para que o agente de IA, possa formular respostas mais completas e precisas. Ao pesquisar informações armazenadas nestes dados, a priorização correta dos arquivos é fundamental para garantir a qualidade e a relevância do conteúdo gerado.\n\nHierarquia de Prioridade de Documentos\n\nAo realizar buscas sobre a banda Rush, os seguintes arquivos devem ser consultados em ordem de prioridade. A busca deve cessar assim que uma resposta satisfatória for encontrada, seguindo a hierarquia abaixo:\n\nOrdem de Prioridade\nNome do Arquivo\nDescrição e Contexto de Uso\n1 (Máxima)\n0 Rush Song by Song - Alex Body\nFonte primária para informações detalhadas sobre músicas individuais.\n2\n0rushprincipal-90-00\nFonte secundária, focada no período da banda entre os anos 90 e 2000.\n3\n0rushprincipal-80\nFonte terciária, focada no período da banda durante os anos 80.\n\n\nInstrução Específica para Turnês\n\nPara consultas relacionadas a turnês, a seguinte fonte de informação deve ser priorizada sobre todas as outras:\n\nOrdem de Prioridade\nNome do Arquivo\nDescrição e Contexto de Uso\n1 (Especial)\n1- WTFOE - Complemento\nFonte primária e especializada para informações sobre as turnês da banda.\n\n\nExemplo de Cenário de Uso\n\nConsulta: \"Fale sobre a música 'Tom Sawyer' e a turnê do álbum 'Moving Pictures'.\"\n\n1.\nPesquisa sobre a música: O agente deve primeiro consultar 0 Rush Song by Song - Alex Body. Se a informação for suficiente, a busca por informações da música termina aqui.\n\n2.\nPesquisa sobre a turnê: O agente deve priorizar a consulta ao arquivo 1- WTFOE - Complemento para obter detalhes sobre a turnê do álbum \"Moving Pictures\".",
+        "memoryKey": {
+          "__rl": true,
+          "mode": "list",
+          "value": "vector_store_key"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.3,
+      "position": [
+        1232,
+        144
+      ],
+      "id": "37bb3d4c-e484-4207-b19e-b8ef2825b6b9",
+      "name": "Banco_de_pdfs"
+    },
+    {
+      "parameters": {
+        "options": {
+          "temperature": 0.2
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -1152,
+        48
+      ],
+      "id": "ff7d2e2c-52a7-4f72-a2b0-adadf1a91877",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "CJ590DJ4YzYgkyyf",
+          "name": "Google Gemini(PaLM) Api account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://portalrushbrasil.com.br/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -960,
+        352
+      ],
+      "id": "a971ec41-9454-4fb4-848d-1e91c7308541",
+      "name": "portal_rushbrasil"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Pega o item que chega do nó anterior (Set)\nconst item = items[0];\n\n// --- CORREÇÃO FINAL: Acesso Direto ao JSON com o nome 'outputFinal' ---\n// O nome do campo no nó Set é 'outputFinal'.\n// Se a saída do nó Set for um objeto JSON, o caminho é item.json.outputFinal.\nconst textoBruto = item.json && item.json.outputFinal; // <--- MUDANÇA AQUI!\n\n// Verifica se o texto foi encontrado e é uma string válida\nif (!textoBruto || typeof textoBruto !== 'string') {\n    // Se o texto não for encontrado, é porque o nó Set não gerou o campo\n    // corretamente ou o nome do campo está errado.\n    throw new Error('Erro: O texto de entrada não foi encontrado em item.json.outputFinal. Verifique se o nó Set está gerando o campo corretamente.');\n}\n\n// Limpa o texto de quebras de linha desnecessárias que podem vir do Agente IA\n// e garante que o texto comece com o título.\nconst textoSujo = textoBruto.replace(/\\\\n/g, '\\n').trim();\n\n// --- Mágica da Limpeza Aprimorada ---\n\n// 1. Divide o texto em linhas\nconst linhas = textoSujo.split('\\n');\n\n// 2. Extrai o título da primeira linha\n// Remove marcadores Markdown de título (como '### ')\nconst titulo_principal = linhas[0].replace(/#+\\s*/, '').trim();\n\n// 3. O conteúdo é o restante do texto, a partir da segunda linha.\n// Isso é mais seguro do que procurar por '\\n\\n'.\nconst conteudo_artigo = linhas.slice(1).join('\\n').trim();\n\n// --- Cria o objeto JSON final ---\nconst resultadoFinal = {\n  titulo_principal: titulo_principal,\n  conteudo_artigo: conteudo_artigo\n};\n\n// Retorna o objeto JSON limpo e pronto para o próximo nó\nreturn [{\n  json: resultadoFinal\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        64,
+        -320
+      ],
+      "id": "2e34aae0-d7f1-4a99-84a5-b75d974ca953",
+      "name": "nó _de _limpeza"
+    },
+    {
+      "parameters": {
+        "public": true,
+        "initialMessages": "Olá sou o Agente Rush 🦉\n\nComo posso te ajudar hoje?",
+        "options": {
+          "title": "Agente Rush 🦉"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -1200,
+        -304
+      ],
+      "id": "7089fe89-06ab-44c6-ba79-4c3a2ef09ed4",
+      "name": "When chat message received",
+      "webhookId": "7ddab5f1-3b66-4a94-ae34-e71cf38b64a4"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "41ce9c0d-7175-4ef5-8b05-3f5e32626f4f",
+              "name": "\t parsed_json (Correto)",
+              "value": "=\t{{ JSON.parse($json.output) }} (Correto)",
+              "type": "object"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -80,
+        -624
+      ],
+      "id": "3d9a7fd3-4e6a-4f3f-aa6e-cad60466da80",
+      "name": "Converter_Output_para_JSON"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "4afa4db1-31dc-4676-9eaf-a368a5c47cf9",
+              "leftValue": "={{ $json.output }}",
+              "rightValue": "=[APROVADO]",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -448,
+        -304
+      ],
+      "id": "059dcb69-9eaf-4385-82f1-9ab9d07b70c5",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a717374c-61bb-4c20-9185-dbcef4fad783",
+              "name": "outputFinal",
+              "value": "={{ $json.output.split(']\\n')[1] }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -160,
+        -320
+      ],
+      "id": "12266995-c8fb-49f4-9ba1-7b109372445a",
+      "name": "part"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f3e8601d-203d-4448-bfec-f89787ef0b4b",
+              "leftValue": "={{ $json.output }}",
+              "rightValue": "[IGNORAR_CHAT]",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -48,
+        2640
+      ],
+      "id": "5479146d-8659-48d0-bc56-ae5c392d352c",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "path": "85ea5a82-d106-42d8-8b5f-019fbe0df35e",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -1168,
+        -528
+      ],
+      "id": "0d173922-00fa-47e7-a160-0e39ba27afe7",
+      "name": "Webhook",
+      "webhookId": "85ea5a82-d106-42d8-8b5f-019fbe0df35e"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Consulte o Caderno de Pesquisa no Google NotebookLM especializado na banda Rush para obter respostas aprofundadas, dados raros, citações exatas de livros, biografias e notas de pesquisa exclusivas.",
+        "method": "POST",
+        "url": "={{ $vars.NOTEBOOKLM_URL || 'http://localhost:5055/ask' }}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"query\": {{ JSON.stringify($fromAI('query', 'A pergunta ou termo de busca específico a ser consultado no NotebookLM')) }}\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        -160,
+        -360
+      ],
+      "id": "e4f8b912-881c-4b62-9721-c30f4e918d22",
+      "name": "NotebookLM_Rush"
+    }
+  ],
+  "pinData": {
+    "When Executed by Another Workflow": [
+      {
+        "json": {
+          "tool": "url",
+          "resultsType": "posts",
+          "instagram_url": "https://instagram.com/msf_portugal",
+          "search_query": null,
+          "search_type": null
+        }
+      }
+    ]
+  },
+  "connections": {
+    "My Effin Life_compressed": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0 Rush Song by Song - Alex Body": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_-_2_": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "WTFOE": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0rushprincipal-80": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0rushprincipal-90-00": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0rushprincipal-70": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Geddy-Lees-Big-Beautiful-Book-of-Bass...-_Z-Library__compressed": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ghost Rider": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "tgtg ra_compressed": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Google Gemini": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          },
+          {
+            "node": "Banco_de_pdfs",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader": {
+      "ai_document": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recursive Character Text Splitter": {
+      "ai_textSplitter": [
+        [
+          {
+            "node": "Default Data Loader",
+            "type": "ai_textSplitter",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rush SURFISTAS PRATEADOS": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "rush vault": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Power Windows": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rush is a band": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "rush is a band 2": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Whiplash.net": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Blabbermouth.net": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agente IA": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "WTFOE",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "tgtg ra_compressed",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_-_2_",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Ghost Rider",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "0 Rush Song by Song - Alex Body",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "My Effin Life_compressed",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Roadshow-Paisagens-e-bateria-De-motoc...-_Z-Library_",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "0rushprincipal-90-00",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "0rushprincipal-80",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Geddy-Lees-Big-Beautiful-Book-of-Bass...-_Z-Library__compressed",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "0rushprincipal-70",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "raspador_PDFs": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Banco_de_pdfs": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "portal_rushbrasil": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "nó _de _limpeza": {
+      "main": [
+        [
+          {
+            "node": "Create a post",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Converter_Output_para_JSON": {
+      "main": [
+        []
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "part",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        []
+      ]
+    },
+    "part": {
+      "main": [
+        [
+          {
+            "node": "nó _de _limpeza",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NotebookLM_Rush": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agente IA",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "12f32eca-b6e2-4c44-8707-86c86c8dc0ee",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "98a7f76cbff973591af08e09b5be2fed14b55b37d878782c0638229a94477203"
+  },
+  "nodeGroups": [],
+  "id": "txi0epu0eLkaZVDn",
+  "tags": [
+    {
+      "updatedAt": "2025-10-15T04:10:22.567Z",
+      "createdAt": "2025-10-15T04:10:22.567Z",
+      "id": "Wb775B7vbV7eJynf",
+      "name": "Automind"
+    }
+  ]
+}

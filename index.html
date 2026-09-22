@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rush_verso // Solar Federation Terminal 2112</title>
+  <meta name="description" content="Interface de conversação futurista inspirada na lendária banda de rock progressivo Rush, integrada à automação inteligente n8n.">
+  <link rel="icon" type="image/svg+xml" href="assets/starman.svg">
+
+  <!-- Design System & Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Dynamic Celestial Canvas (Cygnus X-1 & Starfield) -->
+  <canvas id="starfield-canvas"></canvas>
+
+  <!-- CRT Scanline Retro Ambient Layer -->
+  <div class="scanline-overlay"></div>
+
+  <!-- Master Application Container -->
+  <div class="app-container">
+
+    <!-- ===================================================================
+         TERMINAL HEADER: STARMAN EMBLEM, TITLE & VU METERS
+         =================================================================== -->
+    <header class="terminal-header">
+      <div class="brand-section">
+        <div class="starman-logo-wrapper" id="header-starman" title="Rush 2112 // The Starman">
+          <div class="starman-pulse-ring"></div>
+          <img src="assets/starman.svg" alt="Rush Starman Emblem">
+        </div>
+
+        <div class="brand-titles">
+          <h1 class="brand-title">
+            RUSH_VERSO
+            <span class="badge-2112">2112</span>
+          </h1>
+          <span class="brand-subtitle">Solar Federation Terminal // n8n Automation</span>
+        </div>
+      </div>
+
+      <!-- Oberheim / Minimoog Synth VU Meters -->
+      <div class="synth-meters-container" title="Indicadores de Frequência & Síntese Rítmica">
+        <div class="meter-group">
+          <span class="meter-label">FREQ (7/8)</span>
+          <div class="vu-bar">
+            <div class="vu-segment" data-color="green"></div>
+            <div class="vu-segment" data-color="green"></div>
+            <div class="vu-segment" data-color="green"></div>
+            <div class="vu-segment" data-color="gold"></div>
+            <div class="vu-segment" data-color="red"></div>
+          </div>
+        </div>
+        <div class="meter-group">
+          <span class="meter-label">MOOG TAURUS</span>
+          <div class="vu-bar">
+            <div class="vu-segment" data-color="green"></div>
+            <div class="vu-segment" data-color="green"></div>
+            <div class="vu-segment" data-color="gold"></div>
+            <div class="vu-segment" data-color="gold"></div>
+            <div class="vu-segment" data-color="red"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Controls -->
+      <div class="header-actions">
+        <!-- Live Connection Status Pill -->
+        <div class="status-pill" id="status-pill" title="Clique para configurar o n8n">
+          <div class="status-indicator" id="status-indicator"></div>
+          <span id="status-text">n8n Sincronizado</span>
+        </div>
+
+        <!-- Audio Mute Toggle (Web Audio API) -->
+        <button class="btn-icon" id="btn-audio-toggle" title="Alternar Efeitos Sonoros de Sintetizador">
+          <!-- Dynamically populated by audio engine -->
+        </button>
+
+        <!-- Clear Chat History -->
+        <button class="btn-icon" id="btn-clear-chat" title="Limpar Conversação do Terminal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          </svg>
+        </button>
+
+        <!-- Settings Modal Trigger -->
+        <button class="btn-icon" id="btn-settings" title="Configurações da Conexão n8n">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+
+      </div>
+    </header>
+
+    <!-- ===================================================================
+         MAIN STAGE: CONVERSATION AREA
+         =================================================================== */ -->
+    <main class="main-stage">
+
+      <!-- --- CHAT VIEWPORT (CENTER STREAM) --- -->
+      <section class="chat-workspace">
+
+        <!-- Messages Container -->
+        <div class="messages-container" id="messages-container">
+
+          <!-- Welcome Hero (Displayed when history is fresh) -->
+          <div class="welcome-hero" id="welcome-hero">
+            <div class="hero-starman">
+              <img src="assets/starman.svg" alt="Starman Emblem">
+            </div>
+            <h2 class="hero-title">BEM-VINDO AO <span>RUSH_VERSO</span></h2>
+            <p class="hero-desc">
+              Terminal de comunicação direta com a automação <strong>n8n</strong>.
+              Sincronizado na frequência de Toronto e das galáxias distantes de Cygnus X-1.
+              Envie perguntas, explore dados, ou comande a Federação Solar.
+            </p>
+
+            <div class="hero-pills">
+              <button class="hero-pill" data-prompt="Explique o conceito do álbum 2112 e a lenda do Starman.">
+                ⚡ 2112 & Starman
+              </button>
+              <button class="hero-pill" data-prompt="Qual o ritmo em código Morse da faixa YYZ?">
+                ✈️ Morse de YYZ
+              </button>
+              <button class="hero-pill" data-prompt="Como foi a transição do Rush com os sintetizadores na era Signals e Moving Pictures?">
+                🎹 Sintetizadores Oberheim
+              </button>
+              <button class="hero-pill" data-prompt="Qual a filosofia lírica de Neil Peart?">
+                🥁 Neil Peart & Filosofia
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Input Dock -->
+        <div class="input-dock">
+          <div class="quick-bar">
+            <div class="active-session-tag">
+              CANAL DE SESSÃO: <span id="active-session-id">syrinx-2112</span>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <textarea 
+              class="chat-textarea" 
+              id="chat-input" 
+              rows="1" 
+              placeholder="Digite sua mensagem para a automação n8n... (Shift + Enter para quebrar linha)"></textarea>
+
+            <button class="btn-transmit" id="btn-transmit" title="Transmitir mensagem">
+              <span>TRANSMIT</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="telemetry-bar">
+            <div class="telemetry-item">
+              <span>STATUS:</span> <strong>READY_2112</strong>
+            </div>
+            <div class="telemetry-item">
+              <span>METRIC:</span> <strong>7/8 ODD TIME</strong>
+            </div>
+            <div class="telemetry-item">
+              <span>COORDS:</span> <strong>CYGNUS X-1</strong>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+  </div>
+
+  <!-- ===================================================================
+       SETTINGS MODAL: N8N CONNECTION SETUP
+       =================================================================== -->
+  <div class="modal-backdrop" id="settings-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          Sincronização n8n // Configurações
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label" for="setting-webhook-url">
+            <span>URL do Webhook do n8n</span>
+            <span class="form-hint">(Production ou Test URL)</span>
+          </label>
+          <input 
+            type="text" 
+            class="form-input" 
+            id="setting-webhook-url" 
+            placeholder="https://n8n-n8n-start.hup4p9.easypanel.host/webhook/85ea5a82-d106-42d8-8b5f-019fbe0df35e">
+          <span class="form-hint">
+            Webhook configurado e pronto para o fluxo atual.
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Protocolo HTTP / Método</label>
+          <div class="mode-selector" style="grid-template-columns: 1fr 1fr 1fr;">
+            <div class="mode-option active" id="mode-auto">
+              <div class="mode-option-title">Auto</div>
+              <div class="mode-option-desc">Auto-detecção</div>
+            </div>
+            <div class="mode-option" id="mode-get">
+              <div class="mode-option-title">GET</div>
+              <div class="mode-option-desc">Query Params</div>
+            </div>
+            <div class="mode-option" id="mode-post">
+              <div class="mode-option-title">POST</div>
+              <div class="mode-option-desc">JSON Body</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Memória de Conversação</label>
+          <button type="button" class="btn-secondary" id="btn-reset-session" style="width: 100%;">
+            🔄 Gerar Nova Sessão (Resetar Contexto)
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-secondary" id="btn-cancel-settings">Cancelar</button>
+        <button class="btn-primary" id="btn-save-settings">Salvar & Conectar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules with Cache Busting -->
+  <script src="js/starfield.js?v=2112"></script>
+  <script src="js/audio.js?v=2112"></script>
+  <script src="js/n8n-client.js?v=2112"></script>
+  <script src="js/app.js?v=2112"></script>
+
+</body>
+</html>
