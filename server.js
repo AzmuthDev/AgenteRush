@@ -38,7 +38,15 @@ function parseCookies(req) {
     if (idx === -1) return;
     const key = pair.slice(0, idx).trim();
     const value = pair.slice(idx + 1).trim();
-    if (key) cookies[key] = decodeURIComponent(value);
+    if (!key) return;
+    try {
+      cookies[key] = decodeURIComponent(value);
+    } catch (err) {
+      // Malformed %-escape sequence in this cookie's value: skip decoding
+      // for just this one cookie instead of letting it abort parsing (and,
+      // uncaught, take down the whole request handler) for every cookie.
+      cookies[key] = value;
+    }
   });
   return cookies;
 }
@@ -90,6 +98,16 @@ const server = http.createServer((req, res) => {
 
   // Security check: ensure within root
   if (!filePath.startsWith(__dirname)) {
+    res.writeHead(403);
+    res.end('Acesso Negado');
+    return;
+  }
+
+  // The config JSON file lives under ./data (see config-store.js), which by
+  // default sits inside the directory the static-file fallback below would
+  // otherwise serve. Deny the whole /data path so that file can never be
+  // fetched directly, bypassing the API-key gate on /api/instagram-config.
+  if (reqUrl === '/data' || reqUrl.startsWith('/data/')) {
     res.writeHead(403);
     res.end('Acesso Negado');
     return;
@@ -313,6 +331,13 @@ server.setTimeout(360000); // 6 minutes for AI Agent deep search
 module.exports = { server, PORT };
 
 if (require.main === module) {
+  if (!process.env.ADMIN_PASSWORD) {
+    console.warn('AVISO: variável de ambiente ADMIN_PASSWORD não definida — POST /api/admin/login retornará 503 até que seja configurada.');
+  }
+  if (!process.env.INSTAGRAM_CONFIG_API_KEY) {
+    console.warn('AVISO: variável de ambiente INSTAGRAM_CONFIG_API_KEY não definida — GET /api/instagram-config retornará 503 até que seja configurada.');
+  }
+
   server.listen(PORT, () => {
     console.log(`\n======================================================`);
     console.log(`⚡ RUSH_VERSO // SOLAR FEDERATION TERMINAL 2112`);

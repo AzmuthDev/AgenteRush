@@ -62,7 +62,15 @@
         if (res.status === 200) {
           return loadConfig();
         }
-        loginError.textContent = 'Senha incorreta';
+        if (res.status === 503) {
+          loginError.textContent = 'Painel não configurado no servidor (variável ADMIN_PASSWORD ausente).';
+          return;
+        }
+        if (res.status === 401) {
+          loginError.textContent = 'Senha incorreta';
+          return;
+        }
+        loginError.textContent = 'Erro inesperado. Tente novamente.';
       })
       .catch(() => {
         loginError.textContent = 'Erro de conexão. Tente novamente.';

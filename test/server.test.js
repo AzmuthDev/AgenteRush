@@ -105,3 +105,56 @@ test('routes fail closed with 503 when their required env var is unset', async (
   assert.equal(noPasswordConfigured.status, 503);
   process.env.ADMIN_PASSWORD = savedPassword;
 });
+
+test('a malformed Cookie header does not crash the server (unauthenticated DoS regression)', async () => {
+  // A deliberately malformed %-escape sequence (truncated) used to throw an
+  // uncaught URIError from decodeURIComponent inside parseCookies, killing
+  // the whole process. Any route that reads cookies is affected; logout is
+  // exercised here.
+  const res = await fetch(`${baseUrl}/api/admin/logout`, {
+    method: 'POST',
+    headers: { Cookie: 'foo=%E0%A4%A' }
+  });
+  assert.equal(res.status, 200);
+
+  // Also hits the GET route that reads the session cookie via requireValidSession.
+  const res2 = await fetch(`${baseUrl}/api/admin/instagram-config`, {
+    headers: { Cookie: 'rush_admin_session=abc; bad=%E0%A4%A' }
+  });
+  assert.equal(res2.status, 401);
+
+  // Prove the server process is still alive and serving normal requests.
+  const followUp = await fetch(`${baseUrl}/api/instagram-config`, {
+    headers: { 'x-api-key': 'n8n-shared-key' }
+  });
+  assert.equal(followUp.status, 200);
+});
+
+test('GET /data/* is blocked, so the raw config file cannot bypass the API-key gate', async () => {
+  const dataDir = path.join(__dirname, '..', 'data');
+  const configFilePath = path.join(dataDir, 'instagram-config.json');
+  await fs.promises.mkdir(dataDir, { recursive: true });
+
+  let backup = null;
+  try {
+    backup = await fs.promises.readFile(configFilePath, 'utf8');
+  } catch (err) {
+    if (err.code !== 'ENOENT') throw err;
+  }
+
+  const marker = JSON.stringify({ triggerWord: 'LEAKED_MARKER_VALUE', dmMessage: 'leak' });
+  await fs.promises.writeFile(configFilePath, marker, 'utf8');
+
+  try {
+    const res = await fetch(`${baseUrl}/data/instagram-config.json`);
+    assert.notEqual(res.status, 200);
+    const text = await res.text();
+    assert.ok(!text.includes('LEAKED_MARKER_VALUE'));
+  } finally {
+    if (backup === null) {
+      await fs.promises.rm(configFilePath, { force: true });
+    } else {
+      await fs.promises.writeFile(configFilePath, backup, 'utf8');
+    }
+  }
+});
