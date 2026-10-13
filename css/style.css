@@ -1147,6 +1147,59 @@ html, body {
 }
 
 /* ===================================================================
+   ADMIN PANEL: INSTAGRAM TRIGGER & DM CONFIGURATION
+   =================================================================== */
+.admin-shell {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.admin-card {
+  width: 100%;
+  max-width: 480px;
+  background: #0f111c;
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 23, 68, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: modalScale 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.admin-card[hidden] {
+  display: none;
+}
+
+.admin-textarea {
+  resize: vertical;
+  min-height: 90px;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.5;
+}
+
+.admin-btn-full {
+  width: 100%;
+}
+
+.admin-status-msg {
+  min-height: 1.1em;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--cyan-signals);
+}
+
+.admin-status-msg--error {
+  color: var(--star-red);
+}
+
+/* ===================================================================
    CUSTOM SCROLLBAR
    =================================================================== */
 ::-webkit-scrollbar {
