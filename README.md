@@ -37,6 +37,19 @@ Para sincronizar o envio e recebimento de mensagens:
 
 ---
 
+## ⚙️ Variáveis de Ambiente (Painel Admin & API do Instagram)
+
+| Variável | Obrigatória para | Descrição |
+|---|---|---|
+| `ADMIN_PASSWORD` | `POST /api/admin/login` | Senha do painel administrativo (`/admin`). Sem ela configurada, as rotas de login retornam `503`. |
+| `INSTAGRAM_CONFIG_API_KEY` | `GET /api/instagram-config` | Chave compartilhada que o fluxo do n8n envia no header `x-api-key` para ler a palavra-gatilho e a mensagem de DM atuais. Sem ela configurada, a rota retorna `503`. |
+
+A configuração (palavra-gatilho e mensagem de DM) é persistida em `data/instagram-config.json`, no caminho `path.join(process.env.RUSH_DATA_DIR || __dirname, 'data', 'instagram-config.json')`.
+
+**Atenção ao fazer deploy (Coolify/Docker):** o diretório `/app/data` precisa ser um **volume persistente**, caso contrário a palavra-gatilho e a mensagem salvas pelo painel admin são perdidas a cada novo deploy/restart do container.
+
+---
+
 ## 🎸 Recursos & Imersão Rush
 
 - **Emblema Starman & Red Star**: O ícone clássico do homem desafiando os sacerdotes de Syrinx no épico *2112*.

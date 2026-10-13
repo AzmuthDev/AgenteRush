@@ -4,7 +4,8 @@
   "description": "Interface Agente Rush com suporte a n8n e NotebookLM",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node --test test/**/*.test.js"
   },
   "keywords": [],
   "author": "AzmuthDev",

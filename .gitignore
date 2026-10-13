@@ -15,6 +15,9 @@ ENV/
 .env.local
 *.log
 
+# Persistent runtime data (Instagram config JSON, etc.)
+data/
+
 # OS / IDE
 .DS_Store
 Thumbs.db

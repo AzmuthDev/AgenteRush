@@ -1,8 +1,74 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { createConfigStore } = require('./config-store.js');
+const { createSessionStore, checkPassword } = require('./auth-store.js');
 
 const PORT = process.env.PORT || 3000;
+
+const SESSION_COOKIE_NAME = 'rush_admin_session';
+const SESSION_MAX_AGE_SECONDS = 43200;
+
+const configStore = createConfigStore(
+  path.join(process.env.RUSH_DATA_DIR || __dirname, 'data', 'instagram-config.json')
+);
+const sessionStore = createSessionStore();
+
+function readJsonBody(req) {
+  return new Promise((resolve, reject) => {
+    let bodyData = '';
+    req.on('data', (chunk) => { bodyData += chunk; });
+    req.on('end', () => {
+      try {
+        resolve(bodyData ? JSON.parse(bodyData) : {});
+      } catch (err) {
+        reject(err);
+      }
+    });
+    req.on('error', reject);
+  });
+}
+
+function parseCookies(req) {
+  const header = req.headers.cookie;
+  const cookies = {};
+  if (!header) return cookies;
+  header.split(';').forEach((pair) => {
+    const idx = pair.indexOf('=');
+    if (idx === -1) return;
+    const key = pair.slice(0, idx).trim();
+    const value = pair.slice(idx + 1).trim();
+    if (key) cookies[key] = decodeURIComponent(value);
+  });
+  return cookies;
+}
+
+function sendJson(res, statusCode, body, extraHeaders = {}) {
+  res.writeHead(statusCode, {
+    'Content-Type': 'application/json; charset=UTF-8',
+    ...extraHeaders
+  });
+  res.end(JSON.stringify(body));
+}
+
+function buildSessionCookie(token, maxAgeSeconds) {
+  const parts = [
+    `${SESSION_COOKIE_NAME}=${token}`,
+    'HttpOnly',
+    'SameSite=Strict',
+    'Path=/',
+    `Max-Age=${maxAgeSeconds}`
+  ];
+  if (process.env.NODE_ENV === 'production') parts.push('Secure');
+  return parts.join('; ');
+}
+
+function requireValidSession(req) {
+  const cookies = parseCookies(req);
+  const token = cookies[SESSION_COOKIE_NAME];
+  if (!token) return false;
+  return sessionStore.validateSession(token);
+}
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=UTF-8',
@@ -112,6 +178,116 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  if (reqUrl === '/api/instagram-config' && req.method === 'GET') {
+    const apiKey = process.env.INSTAGRAM_CONFIG_API_KEY;
+    if (!apiKey) {
+      sendJson(res, 503, { error: 'not_configured' });
+      return;
+    }
+    if (req.headers['x-api-key'] !== apiKey) {
+      sendJson(res, 401, { error: 'unauthorized' });
+      return;
+    }
+    configStore.read()
+      .then((config) => {
+        sendJson(res, 200, { triggerWord: config.triggerWord, dmMessage: config.dmMessage });
+      })
+      .catch((err) => {
+        console.error('Config read error:', err.message);
+        sendJson(res, 500, { error: 'internal_error' });
+      });
+    return;
+  }
+
+  if (reqUrl === '/api/admin/login' && req.method === 'POST') {
+    const adminPassword = process.env.ADMIN_PASSWORD;
+    if (!adminPassword) {
+      sendJson(res, 503, { error: 'not_configured' });
+      return;
+    }
+    readJsonBody(req)
+      .then((body) => {
+        if (!checkPassword(body.password, adminPassword)) {
+          sendJson(res, 401, { error: 'invalid_password' });
+          return;
+        }
+        const token = sessionStore.createSession();
+        sendJson(res, 200, { ok: true }, {
+          'Set-Cookie': buildSessionCookie(token, SESSION_MAX_AGE_SECONDS)
+        });
+      })
+      .catch(() => {
+        sendJson(res, 400, { error: 'invalid_body' });
+      });
+    return;
+  }
+
+  if (reqUrl === '/api/admin/logout' && req.method === 'POST') {
+    const cookies = parseCookies(req);
+    const token = cookies[SESSION_COOKIE_NAME];
+    if (token) sessionStore.revokeSession(token);
+    sendJson(res, 200, { ok: true }, {
+      'Set-Cookie': buildSessionCookie('', 0)
+    });
+    return;
+  }
+
+  if (reqUrl === '/api/admin/instagram-config' && req.method === 'GET') {
+    if (!requireValidSession(req)) {
+      sendJson(res, 401, { error: 'unauthorized' });
+      return;
+    }
+    configStore.read()
+      .then((config) => {
+        sendJson(res, 200, config);
+      })
+      .catch((err) => {
+        console.error('Config read error:', err.message);
+        sendJson(res, 500, { error: 'internal_error' });
+      });
+    return;
+  }
+
+  if (reqUrl === '/api/admin/instagram-config' && req.method === 'POST') {
+    if (!requireValidSession(req)) {
+      sendJson(res, 401, { error: 'unauthorized' });
+      return;
+    }
+    readJsonBody(req)
+      .then((body) => configStore.write({ triggerWord: body.triggerWord, dmMessage: body.dmMessage }))
+      .then((config) => {
+        sendJson(res, 200, config);
+      })
+      .catch((err) => {
+        if (err instanceof SyntaxError) {
+          sendJson(res, 400, { error: 'invalid_body' });
+        } else if (err.message === 'INVALID_CONFIG') {
+          sendJson(res, 400, { error: 'invalid_input' });
+        } else {
+          console.error('Config write error:', err.message);
+          sendJson(res, 500, { error: 'internal_error' });
+        }
+      });
+    return;
+  }
+
+  if (reqUrl === '/admin' && req.method === 'GET') {
+    const adminFilePath = path.join(__dirname, 'admin.html');
+    fs.stat(adminFilePath, (err, stats) => {
+      if (err || !stats.isFile()) {
+        res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
+        res.end('404 Not Found - Templo de Syrinx');
+        return;
+      }
+      res.writeHead(200, {
+        'Content-Type': MIME_TYPES['.html'],
+        'Cache-Control': 'no-cache'
+      });
+      fs.createReadStream(adminFilePath).pipe(res);
+    });
+    return;
+  }
+
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
@@ -134,9 +310,13 @@ const server = http.createServer((req, res) => {
 
 server.setTimeout(360000); // 6 minutes for AI Agent deep search
 
-server.listen(PORT, () => {
-  console.log(`\n======================================================`);
-  console.log(`⚡ RUSH_VERSO // SOLAR FEDERATION TERMINAL 2112`);
-  console.log(` Servidor local ativo em: http://localhost:${PORT}`);
-  console.log(`======================================================\n`);
-});
+module.exports = { server, PORT };
+
+if (require.main === module) {
+  server.listen(PORT, () => {
+    console.log(`\n======================================================`);
+    console.log(`⚡ RUSH_VERSO // SOLAR FEDERATION TERMINAL 2112`);
+    console.log(` Servidor local ativo em: http://localhost:${PORT}`);
+    console.log(`======================================================\n`);
+  });
+}
