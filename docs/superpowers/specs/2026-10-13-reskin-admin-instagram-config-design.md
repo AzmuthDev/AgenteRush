@@ -131,7 +131,7 @@ Mudança nos nós (via acesso MCP já liberado):
 
 1. **Novo nó** `Config_RushVerso` (HTTP Request, GET), inserido entre
    `Webhook_Instagram` e `Validar_Comentário`:
-   - URL: `<URL_PUBLICA_RUSH_VERSO>/api/instagram-config`
+   - URL: `https://agenterush.portalrushzine.com/api/instagram-config`
    - Header: `X-Api-Key: <INSTAGRAM_CONFIG_API_KEY>`
 2. **`Validar_Comentário`** (nó IF): a condição que hoje compara o texto do
    comentário com o literal `"portal"` passa a comparar com
@@ -142,9 +142,7 @@ Mudança nos nós (via acesso MCP já liberado):
 Os demais nós do workflow (webhook de verificação GET, e os HTTP Requests soltos de
 depuração) não são tocados.
 
-**Pendência:** URL pública de produção do Rush_verso — o Tânios vai informar antes da
-implementação dessa parte; até lá, o nó `Config_RushVerso` é criado com a URL
-combinada assim que recebida.
+URL pública de produção do Rush_verso: `https://agenterush.portalrushzine.com/`.
 
 ## Testes
 
