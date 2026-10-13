@@ -184,7 +184,7 @@ const server = http.createServer((req, res) => {
       sendJson(res, 503, { error: 'not_configured' });
       return;
     }
-    if (req.headers['x-api-key'] !== apiKey) {
+    if (!checkPassword(req.headers['x-api-key'], apiKey)) {
       sendJson(res, 401, { error: 'unauthorized' });
       return;
     }
