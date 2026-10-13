@@ -2,6 +2,20 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
+> **Status (2026-10-13):** Tasks 1–5 complete, reviewed, merged to `main`, deployed to production
+> (`https://agenterush.portalrushzine.com/`) and verified live. Task 6 (wiring the n8n workflow
+> to the new config endpoint) is **blocked**: the n8n host (Easypanel) cannot reach the Rush_verso
+> host (Coolify) over HTTPS — every attempt times out with `ECONNABORTED`, confirmed with an
+> isolated diagnostic node (see `.superpowers/sdd/2026-10-13-reskin-admin-instagram-config/progress.md`
+> in the now-removed feature worktree, or this file's git history, for the investigation trail).
+> The live n8n workflow was reverted to its pre-Task-6 version (`b3ba0506-...`) and confirmed
+> working normally — no production impact. This is a network/infra issue between the two hosting
+> providers, not a defect in this plan's code; resolving it (firewall/WAF/allowlist on the Coolify
+> side, most likely) is a prerequisite for resuming Task 6. Until then, Tânios can edit the
+> trigger word and DM message at `/admin`, but the n8n Instagram bot will not read those edits —
+> someone needs to update the workflow's hardcoded values manually in n8n if a change is needed
+> in the meantime.
+
 **Goal:** Let Tânios edit the Instagram comment-trigger word and DM reply message from a password-protected `/admin` page in Rush_verso, consumed live by the n8n workflow, and refine the site's visual polish without changing its synth-terminal identity.
 
 **Architecture:** A new `config-store.js` module persists `{ triggerWord, dmMessage }` to `data/instagram-config.json` on disk. `server.js` (plain Node `http`, no framework) grows five routes: a public API-key-gated read for n8n, and four cookie-session-gated admin routes backed by a new `auth-store.js` in-memory session module. A static `admin.html` + `js/admin.js` give Tânios the login/edit UI. The n8n workflow `Instagram Bot - Comentário para DM` (`b6OQ8092uERKTaoD`) gets a new HTTP Request node that fetches this config on every incoming comment, replacing its two hardcoded values. CSS/markup cleanup in `index.html`/`css/style.css` is independent of the backend work.
