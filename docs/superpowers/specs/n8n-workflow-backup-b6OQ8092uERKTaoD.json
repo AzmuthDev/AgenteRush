@@ -1,0 +1,151 @@
+{
+  "id": "b6OQ8092uERKTaoD",
+  "name": "Instagram Bot - Comentário para DM",
+  "active": true,
+  "isArchived": false,
+  "versionId": "b3ba0506-3b55-4b72-ab19-8981bfba9f15",
+  "activeVersionId": "b3ba0506-3b55-4b72-ab19-8981bfba9f15",
+  "triggerCount": 1,
+  "nodeCount": 9,
+  "createdAt": "2026-10-09T21:16:22.891Z",
+  "updatedAt": "2026-10-13T13:01:15.136Z",
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "timeSavedMode": "fixed",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": true
+  },
+  "tags": [],
+  "parentFolderId": null,
+  "connections": {
+    "Webhook Verificação (GET)": {
+      "main": [[{ "node": "Responder Challenge", "type": "main", "index": 0 }]]
+    },
+    "Validar_Comentário": {
+      "main": [[{ "node": "Enviar_DM", "type": "main", "index": 0 }]]
+    },
+    "Webhook_Instagram": {
+      "main": [[{ "node": "Validar_Comentário", "type": "main", "index": 0 }]]
+    }
+  },
+  "nodes": [
+    {
+      "parameters": { "path": "instagram-webhook", "responseMode": "responseNode", "options": {} },
+      "id": "826282b3-32bd-4e86-9dcc-97c5f6b9a20d",
+      "name": "Webhook Verificação (GET)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [-1248, 240],
+      "webhookId": "instagram-webhook-get",
+      "disabled": true
+    },
+    {
+      "parameters": { "respondWith": "text", "responseBody": "={{ $json.query['hub.challenge'] }}", "options": {} },
+      "id": "53123d47-74e2-4ae3-a896-3e8d157e4e30",
+      "name": "Responder Challenge",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [-880, 240],
+      "disabled": true
+    },
+    {
+      "parameters": { "url": "https://graph.facebook.com/v21.0/me?fields=id,name&access_token=REDACTED", "options": {} },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [0, 272],
+      "id": "5370bb94-b187-43f3-9dc7-16066c96aa71",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": { "url": "https://graph.facebook.com/v21.0/189804487729721?fields=access_token&access_token=REDACTED", "options": {} },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [0, 0],
+      "id": "f37c3ccc-c959-4574-a27c-3c4c11020715",
+      "name": "HTTP Request1"
+    },
+    {
+      "parameters": { "url": "https://graph.facebook.com/v21.0/18114086677745978/comments?fields=id,text,username&access_token=REDACTED", "options": {} },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [304, 32],
+      "id": "9d373579-0e88-43e1-9af2-a5386c777503",
+      "name": "HTTP Request2"
+    },
+    {
+      "parameters": { "url": "https://graph.facebook.com/v21.0/189804487729721?fields=instagram_business_account&access_token=REDACTED", "options": {} },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [272, 224],
+      "id": "1fa8fb36-ddc4-4daf-b964-5dd7fdf12e32",
+      "name": "HTTP Request3"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.facebook.com/v21.0/189804487729721/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "Bearer REDACTED" },
+            { "name": "Content-Type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"{{ $json.body.entry[0].changes[0].value.id }}\"\n  },\n  \"message\": {\n    \"text\": \"Olá! Vi seu comentário no post. Acesse o link aqui: https://portalrushbrasil.com.br\"\n  }\n}",
+        "options": {}
+      },
+      "id": "5c61959f-02c7-4efd-af34-697f9ff55029",
+      "name": "Enviar_DM",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [-480, 544]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict", "version": 2 },
+          "conditions": [
+            {
+              "id": "cond-field",
+              "leftValue": "={{ $json.body?.entry?.[0]?.changes?.[0]?.field || '' }}",
+              "rightValue": "comments",
+              "operator": { "type": "string", "operation": "equals" }
+            },
+            {
+              "id": "cond-nao-proprio",
+              "leftValue": "={{ String($json.body?.entry?.[0]?.changes?.[0]?.value?.from?.id || '') }}",
+              "rightValue": "={{ String($json.body?.entry?.[0]?.id || '') }}",
+              "operator": { "type": "string", "operation": "notEquals" }
+            },
+            {
+              "id": "cond-palavra",
+              "leftValue": "={{ $json.body?.entry?.[0]?.changes?.[0]?.value?.text?.toLowerCase()?.trim() || '' }}",
+              "rightValue": "portal",
+              "operator": { "type": "string", "operation": "contains" }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "3c5d937e-fcf6-439c-af8c-86acf151ea31",
+      "name": "Validar_Comentário",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [-880, 560]
+    },
+    {
+      "parameters": { "httpMethod": "POST", "path": "instagram-webhook", "options": {} },
+      "id": "7c2739e7-af52-430b-a618-4d414d640482",
+      "name": "Webhook_Instagram",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [-1248, 560],
+      "webhookId": "instagram-webhook-post"
+    }
+  ],
+  "_note": "Snapshot taken 2026-10-13 before rewiring to dynamic config (Task 6 of docs/superpowers/plans/2026-10-13-reskin-admin-instagram-config.md). Facebook Graph API access tokens redacted from this file — the live workflow in n8n has the real values; this backup is for structural rollback (nodes/connections/parameters) only."
+}
