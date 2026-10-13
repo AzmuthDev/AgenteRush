@@ -348,7 +348,7 @@ Expected: PASS (5/5)
 
 - [ ] **Step 5: Add the test script, gitignore the data dir, and document the new env vars**
 
-In `package.json`, add `"test": "node --test test/"` to `scripts`. In `.gitignore`, add a `data/` line. In `README.md`, add a section documenting `ADMIN_PASSWORD`, `INSTAGRAM_CONFIG_API_KEY`, and that `/app/data` must be a persistent Coolify volume or the saved trigger word/message reset on every redeploy.
+In `package.json`, add `"test": "node --test test/**/*.test.js"` to `scripts` (the bare directory form `node --test test/` fails to discover files on this project's Node version — confirmed during Task 2; the quoted glob lets Node's own built-in glob matching find the files instead of relying on shell expansion, which is also what keeps it working the same way on Windows). In `.gitignore`, add a `data/` line. In `README.md`, add a section documenting `ADMIN_PASSWORD`, `INSTAGRAM_CONFIG_API_KEY`, and that `/app/data` must be a persistent Coolify volume or the saved trigger word/message reset on every redeploy.
 
 - [ ] **Step 6: Run the full test suite to confirm nothing else broke**
 
