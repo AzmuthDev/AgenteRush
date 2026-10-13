@@ -3,7 +3,7 @@
    Design System & Comprehensive Stylesheet
    =================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
   /* Rush Chromatic Palette */
@@ -90,18 +90,18 @@ html, body {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(
-    rgba(18, 16, 16, 0) 50%, 
-    rgba(0, 0, 0, 0.25) 50%
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.125) 50%
   ), linear-gradient(
     90deg,
-    rgba(255, 0, 0, 0.02),
-    rgba(0, 255, 0, 0.01),
-    rgba(0, 0, 255, 0.02)
+    rgba(255, 0, 0, 0.01),
+    rgba(0, 255, 0, 0.005),
+    rgba(0, 0, 255, 0.01)
   );
   background-size: 100% 4px, 6px 100%;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.7;
+  opacity: 0.35;
 }
 
 /* Main Layout Grid */
@@ -359,135 +359,6 @@ html, body {
   min-height: 0; /* Important for inner flex/scroll */
 }
 
-/* --- SIDEBAR: SYRINX ARCHIVES & KNOWLEDGE PRESETS --- */
-.terminal-sidebar {
-  display: flex;
-  flex-direction: column;
-  background: var(--bg-panel);
-  backdrop-filter: var(--glass-backdrop);
-  -webkit-backdrop-filter: var(--glass-backdrop);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  box-shadow: var(--glass-shadow);
-  padding: 14px;
-  overflow: hidden;
-  gap: 14px;
-}
-
-.sidebar-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--gold-synth);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(255, 183, 3, 0.15);
-}
-
-.sidebar-scrollable {
-  flex: 1;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  padding-right: 4px;
-}
-
-/* Presets & Prompts Cards */
-.preset-section {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.preset-category-label {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--text-muted);
-  text-transform: uppercase;
-}
-
-.prompt-card {
-  padding: 9px 12px;
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  text-align: left;
-}
-
-.prompt-card:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--star-red);
-  box-shadow: 0 0 14px rgba(255, 23, 68, 0.2);
-  transform: translateX(3px);
-}
-
-.prompt-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.prompt-album-tag {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.62rem;
-  font-weight: 600;
-  color: var(--gold-synth);
-}
-
-.prompt-card-title {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--text-pure);
-}
-
-.prompt-card-desc {
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  line-height: 1.3;
-}
-
-/* Sidebar Footer Info */
-.sidebar-footer {
-  padding-top: 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.lyrics-quote-box {
-  padding: 8px 10px;
-  background: rgba(0, 0, 0, 0.35);
-  border-left: 2px solid var(--star-red);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  font-style: italic;
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  line-height: 1.4;
-}
-
-.lyrics-author {
-  display: block;
-  text-align: right;
-  font-style: normal;
-  font-size: 0.62rem;
-  color: var(--gold-synth);
-  margin-top: 4px;
-}
-
 /* --- CHAT VIEWPORT (CENTER / RIGHT) --- */
 .chat-workspace {
   display: flex;
@@ -695,7 +566,7 @@ html, body {
 
 /* Markdown styling inside bubbles */
 .message-bubble p {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .message-bubble p:last-child {
@@ -712,7 +583,7 @@ html, body {
 }
 
 .message-bubble ul, .message-bubble ol {
-  margin: 8px 0 10px 22px;
+  margin: 8px 0 14px 22px;
 }
 
 .message-bubble li {
@@ -721,9 +592,12 @@ html, body {
 
 .message-bubble blockquote {
   border-left: 3px solid var(--gold-synth);
-  padding: 6px 12px;
-  margin: 10px 0;
-  background: rgba(255, 183, 3, 0.07);
+  border-top: 1px solid rgba(255, 183, 3, 0.2);
+  border-right: 1px solid rgba(255, 183, 3, 0.2);
+  border-bottom: 1px solid rgba(255, 183, 3, 0.2);
+  padding: 8px 14px;
+  margin: 14px 0;
+  background: rgba(255, 183, 3, 0.14);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   font-style: italic;
   color: var(--text-pure);
@@ -740,7 +614,7 @@ html, body {
 }
 
 .message-bubble pre {
-  margin: 10px 0;
+  margin: 14px 0;
   padding: 12px;
   background: #090a12;
   border-radius: var(--radius-sm);
@@ -935,6 +809,26 @@ html, body {
 
 .telemetry-item strong {
   color: var(--text-muted);
+}
+
+/* Quiet Footer Credit */
+.footer-credit {
+  padding: 8px 14px 2px;
+  text-align: center;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+
+.footer-credit a {
+  color: var(--text-dim);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.footer-credit a:hover {
+  color: var(--text-muted);
+  border-bottom-color: var(--text-dim);
 }
 
 /* ===================================================================
@@ -1232,18 +1126,6 @@ html, body {
     grid-template-columns: 1fr;
   }
 
-  .terminal-sidebar {
-    display: none; /* Can be toggled on mobile via drawer button */
-  }
-
-  .terminal-sidebar.mobile-open {
-    display: flex;
-    position: fixed;
-    inset: 60px 10px 10px;
-    z-index: 50;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
-  }
-
   .synth-meters-container {
     display: none;
   }
@@ -1254,6 +1136,25 @@ html, body {
 
   .brand-subtitle {
     font-size: 0.68rem;
+  }
+
+  .terminal-header {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .header-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .hero-starman {
+    width: 72px;
+    height: 72px;
+  }
+
+  .hero-title {
+    font-size: 1.25rem;
   }
 
   .message-content-wrapper {
